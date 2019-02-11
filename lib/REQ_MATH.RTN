@@ -1,0 +1,2283 @@
+The required routines of any documented subprogram can be determined by adding
+to the listed required routines the contents of the core library.  The core
+library is MATHCORE.LIB on diskette #1.
+ 
+The following user-callable routines exist in the core library:
+ 
+ACHAR   AMACH   CONST   DCONST  CVTSI   DMACH   DQADD   DQMUL   DQSTO   ERSET
+IACHAR  ICASE   IERCD   IICSR   IMACH   IWKCIN  IWKIN   PAGE    RNSET   RNUNF
+DRNUNF  SSRCH   UMACH   WROPT
+ 
+ 
+ 
+DOCUMENTED
+ROUTINE           REQUIRED ROUTINES
+-------------------------------------------------------------------------------
+ 
+ACBCB
+        ***** No required routines *****
+ARBRB
+        ***** No required routines *****
+ 
+BCLSF   ( 21 required routines)
+        B2LSF   B3LSF   B4LSF   B5LSF   B6ONF   B8ONF   CSFRG   F2JAC   L2RRR
+        SGEMV   SGER    U10SF   U11NF   U11SF   U12SF   U13SF   U4LSF   U5LSF
+        U6LSF   U7LSF   U8LSF
+ 
+BCLSJ   ( 20 required routines)
+        B2LSJ   B3LSJ   B4LSF   B5LSF   B6ONF   B8ONF   CSFRG   L2RRR   SGEMV
+        SGER    U10SF   U11NF   U11SF   U12SF   U13SF   U4LSF   U5LSF   U6LSF
+        U7LSF   U8LSF
+ 
+BCOAH   ( 18 required routines)
+        B2OAH   B3OAH   B4ONF   B6ONF   B7ONF   B8ONF   CSFRG   U10NF   U11NF
+        U13NF   U14NF   U18NF   U19NF   U4IAH   U4INF   U5INF   U6IAH   U6INF
+ 
+BCODH   ( 19 required routines)
+        B2ODH   B3ODH   B4ONF   B6ONF   B7ONF   B8ONF   CSFRG   G2HES   U10NF
+        U11NF   U13NF   U14NF   U18NF   U19NF   U4IAH   U4INF   U5INF   U6IAH
+        U6INF
+ 
+BCONF   ( 24 required routines)
+        B2ONF   B3ONF   B4ONF   B5ONF   B6ONF   B7ONF   B8ONF   CDGRD   CRGRG
+        CSFRG   FDGRD   TRNRR   U10NF   U11NF   U13NF   U14NF   U18NF   U19NF
+        U4IAH   U4INF   U5INF   U6IAH   U6INF   U9INF
+ 
+BCONG   ( 22 required routines)
+        B2ONG   B3ONG   B4ONF   B5ONF   B6ONF   B7ONF   B8ONF   CRGRG   CSFRG
+        TRNRR   U10NF   U11NF   U13NF   U14NF   U18NF   U19NF   U4IAH   U4INF
+        U5INF   U6IAH   U6INF   U9INF
+ 
+BCPOL   (  3 required routines)
+        B2POL   B3POL   B4POL
+BLINF
+        ***** No required routines *****
+ 
+BS2DR   (  3 required routines)
+        B22DR   B3DER   B4DER
+ 
+BS2IG   (  6 required routines)
+        B22IG   B32IG   B32IN   B3ITG   B4ITG   B5ITG
+ 
+BS2IN   ( 12 required routines)
+        B22IN   B42IN   B4INT   C1NOT   CRBRB   L2CRB   L2TRB   LFIRB   LFSRB
+        NR1RB   SGER    STBSV
+ 
+BS2VL   (  4 required routines)
+        B22DR   B22VL   B3DER   B4DER
+ 
+BS3DR   (  4 required routines)
+        B23DR   B32DR   B3DER   B4DER
+ 
+BS3IG   (  7 required routines)
+        B23IG   B32IG   B32IN   B33IG   B3ITG   B4ITG   B5ITG
+ 
+BS3IN   ( 12 required routines)
+        B23IN   B42IN   B4INT   C1NOT   CRBRB   L2CRB   L2TRB   LFIRB   LFSRB
+        NR1RB   SGER    STBSV
+ 
+BS3VL   (  5 required routines)
+        B23DR   B23VL   B32DR   B3DER   B4DER
+ 
+BSCPP   (  3 required routines)
+        B2CPP   B3CPP   B3INT
+ 
+BSDER   (  4 required routines)
+        B2DER   B3DER   B3INT   B4DER
+ 
+BSINT   ( 15 required routines)
+        B2INT   B3INT   B4INT   B5INT   C1NOT   CRBRB   L2ARB   L2CRB   L2TRB
+        LFIRB   LFSRB   NR1RB   SGER    STBSV   SVRGP
+ 
+BSITG   (  5 required routines)
+        B2ITG   B3INT   B3ITG   B4ITG   B5ITG
+ 
+BSLS2   ( 10 required routines)
+        B2LS2   B3LS2   B4INT   B4LS2   B5LS2   B5LSQ   B6LS2   B6LSQ   B7LS2
+        NR1RB
+ 
+BSLSQ   (  7 required routines)
+        B2LSQ   B3LSQ   B4INT   B4LSQ   B5LSQ   B6LSQ   SVRGP
+ 
+BSNAK   (  2 required routines)
+        B2NAK   SVRGP
+ 
+BSOPK   ( 12 required routines)
+        B2OPK   B3OPK   B4INT   B4OPK   CRBRB   L2CRB   L2TRB   LFSRB   NR1RB
+        SGER    STBSV   SVRGP
+ 
+BSVAL   (  4 required routines)
+        B2VAL   B3DER   B3INT   B4DER
+ 
+BSVLS   ( 19 required routines)
+        B2VLS   B3CPP   B3DER   B3LSQ   B3VLS   B4DER   B4INT   B4LSQ   B4VLS
+        B5LSQ   B5VLS   B6LSQ   B6VLS   B7VLS   B8VLS   P3DER   PPDER   SVRGN
+        SVRGP
+ 
+BVPFD   (  9 required routines)
+        B11FD   B2PFD   B3PFD   B4PFD   B5PFD   B6PFD   B7PFD   B8PFD   B9PFD
+ 
+BVPMS   ( 14 required routines)
+        B2PMS   B3PMS   B4PMS   B5PMS   B6PMS   CRGRG   L2ARG   L2CRG   L2TRG
+        LFIRG   LFSRG   NR1RR   SGER    STRSV
+CADD
+        ***** No required routines *****
+CAXPY
+        ***** No required routines *****
+CCBCB
+        ***** No required routines *****
+CCBCG
+        ***** No required routines *****
+CCGCB
+        ***** No required routines *****
+CCGCG
+        ***** No required routines *****
+CDGRD
+        ***** No required routines *****
+CDOTC
+        ***** No required routines *****
+CDOTU
+        ***** No required routines *****
+ 
+CHBCB   (  1 required routine)
+        CCBCB
+ 
+CHBMV   (  4 required routines)
+        CAXPY   CDOTC   CDOTU   CSCAL
+CHFCG
+        ***** No required routines *****
+ 
+CHGRD   (  2 required routines)
+        C1DER   C2GRD
+ 
+CHHES   (  2 required routines)
+        C1DER   C2HES
+ 
+CHJAC   (  2 required routines)
+        C1DER   C2JAC
+CRBCB
+        ***** No required routines *****
+CRBRB
+        ***** No required routines *****
+CRBRG
+        ***** No required routines *****
+CRGCG
+        ***** No required routines *****
+CRGRB
+        ***** No required routines *****
+CRGRG
+        ***** No required routines *****
+CRRCR
+        ***** No required routines *****
+ 
+CSAKM   (  3 required routines)
+        C1SOR   C2AKM   SVRGP
+ 
+CSBRB   (  1 required routine)
+        CRBRB
+CSCAL
+        ***** No required routines *****
+ 
+CSCON   (  5 required routines)
+        C2CON   C4CON   C5CON   C6CON   SVRGP
+ 
+CSDEC   (  3 required routines)
+        C1SOR   C2DEC   SVRGP
+ 
+CSDER   (  2 required routines)
+        P3DER   PPDER
+CSFRG
+        ***** No required routines *****
+ 
+CSHER   (  3 required routines)
+        C2HER   C3HER   SVRGP
+ 
+CSINT   (  4 required routines)
+        C1SOR   C2DEC   C2INT   SVRGP
+ 
+CSITG   (  2 required routines)
+        P3DER   PPITG
+ 
+CSPER   (  3 required routines)
+        C1SOR   C2PER   SVRGP
+CSROT
+        ***** No required routines *****
+CSROTM
+        ***** No required routines *****
+CSSCAL
+        ***** No required routines *****
+ 
+CSSCV   ( 18 required routines)
+        C1SOR   C2SCV   C3SCV   C4SCV   C5SCV   C6SCV   C7SCV   C8SCV   C9SCV
+        CRBRB   L2TRB   L2VRR   L3VRR   LFSRB   SGEMV   SGER    STBSV   SVRGP
+ 
+CSSED   (  9 required routines)
+        C1SOR   C2AKM   C2SED   C3SED   CSVAL   P3DER   PERMU   PPDER   SVRGP
+ 
+CSSMH   ( 19 required routines)
+        A1OT    C1R     C1SOR   C1TRG   C1WFR   C2DEC   C2INT   C2SMH   C3SMH
+        C4SMH   CSFRG   F2LSQ   GIRTS   ISNAN   R2IVN   R3IVN   SGER    STRSV
+        SVRGP
+CSUB
+        ***** No required routines *****
+ 
+CSVAL   (  2 required routines)
+        P3DER   PPDER
+CSVCAL
+        ***** No required routines *****
+CSWAP
+        ***** No required routines *****
+ 
+CTBMV   (  3 required routines)
+        CAXPY   CDOTC   CDOTU
+CTIME
+        ***** No required routines *****
+ 
+CTRMV   (  2 required routines)
+        CDOTC   CDOTU
+ 
+CUNIT   (  2 required routines)
+        C3NIT   C4NIT
+CVCAL
+        ***** No required routines *****
+CZCDOT
+        ***** No required routines *****
+ 
+CZDOTA  (  5 required routines)
+        CZADD   CZMUL   CZSTO   SDADD   SDMUL
+CZDOTC
+        ***** No required routines *****
+ 
+CZDOTI  (  4 required routines)
+        CZINI   CZMUL   CZSTO   SDMUL
+CZDOTU
+        ***** No required routines *****
+CZUDOT
+        ***** No required routines *****
+DACBCB
+        ***** No required routines *****
+DARBRB
+        ***** No required routines *****
+ 
+DBCLSF  ( 21 required routines)
+        DB2LSF  DB3LSF  DB4LSF  DB5LSF  DB6ONF  DB8ONF  DCSFRG  DF2JAC  DGEMV
+        DGER    DL2RRR  DU10SF  DU11NF  DU11SF  DU12SF  DU13SF  DU4LSF  DU5LSF
+        DU6LSF  DU7LSF  DU8LSF
+ 
+DBCLSJ  ( 20 required routines)
+        DB2LSJ  DB3LSJ  DB4LSF  DB5LSF  DB6ONF  DB8ONF  DCSFRG  DGEMV   DGER
+        DL2RRR  DU10SF  DU11NF  DU11SF  DU12SF  DU13SF  DU4LSF  DU5LSF  DU6LSF
+        DU7LSF  DU8LSF
+ 
+DBCOAH  ( 18 required routines)
+        DB2OAH  DB3OAH  DB4ONF  DB6ONF  DB7ONF  DB8ONF  DCSFRG  DU10NF  DU11NF
+        DU13NF  DU14NF  DU18NF  DU19NF  DU4IAH  DU4INF  DU5INF  DU6IAH  DU6INF
+ 
+DBCODH  ( 19 required routines)
+        DB2ODH  DB3ODH  DB4ONF  DB6ONF  DB7ONF  DB8ONF  DCSFRG  DG2HES  DU10NF
+        DU11NF  DU13NF  DU14NF  DU18NF  DU19NF  DU4IAH  DU4INF  DU5INF  DU6IAH
+        DU6INF
+ 
+DBCONF  ( 24 required routines)
+        DB2ONF  DB3ONF  DB4ONF  DB5ONF  DB6ONF  DB7ONF  DB8ONF  DCDGRD  DCRGRG
+        DCSFRG  DFDGRD  DTRNRR  DU10NF  DU11NF  DU13NF  DU14NF  DU18NF  DU19NF
+        DU4IAH  DU4INF  DU5INF  DU6IAH  DU6INF  DU9INF
+ 
+DBCONG  ( 22 required routines)
+        DB2ONG  DB3ONG  DB4ONF  DB5ONF  DB6ONF  DB7ONF  DB8ONF  DCRGRG  DCSFRG
+        DTRNRR  DU10NF  DU11NF  DU13NF  DU14NF  DU18NF  DU19NF  DU4IAH  DU4INF
+        DU5INF  DU6IAH  DU6INF  DU9INF
+ 
+DBCPOL  (  3 required routines)
+        DB2POL  DB3POL  DB4POL
+DBLINF
+        ***** No required routines *****
+ 
+DBS2DR  (  3 required routines)
+        DB22DR  DB3DER  DB4DER
+ 
+DBS2IG  (  6 required routines)
+        DB22IG  DB32IG  DB32IN  DB3ITG  DB4ITG  DB5ITG
+ 
+DBS2IN  ( 12 required routines)
+        DB22IN  DB42IN  DB4INT  DC1NOT  DCRBRB  DGER    DL2CRB  DL2TRB  DLFIRB
+        DLFSRB  DNR1RB  DTBSV
+ 
+DBS2VL  (  4 required routines)
+        DB22DR  DB22VL  DB3DER  DB4DER
+ 
+DBS3DR  (  4 required routines)
+        DB23DR  DB32DR  DB3DER  DB4DER
+ 
+DBS3IG  (  7 required routines)
+        DB23IG  DB32IG  DB32IN  DB33IG  DB3ITG  DB4ITG  DB5ITG
+ 
+DBS3IN  ( 12 required routines)
+        DB23IN  DB42IN  DB4INT  DC1NOT  DCRBRB  DGER    DL2CRB  DL2TRB  DLFIRB
+        DLFSRB  DNR1RB  DTBSV
+ 
+DBS3VL  (  5 required routines)
+        DB23DR  DB23VL  DB32DR  DB3DER  DB4DER
+ 
+DBSCPP  (  3 required routines)
+        DB2CPP  DB3CPP  DB3INT
+ 
+DBSDER  (  4 required routines)
+        DB2DER  DB3DER  DB3INT  DB4DER
+ 
+DBSINT  ( 15 required routines)
+        DB2INT  DB3INT  DB4INT  DB5INT  DC1NOT  DCRBRB  DGER    DL2ARB  DL2CRB
+        DL2TRB  DLFIRB  DLFSRB  DNR1RB  DSVRGP  DTBSV
+ 
+DBSITG  (  5 required routines)
+        DB2ITG  DB3INT  DB3ITG  DB4ITG  DB5ITG
+ 
+DBSLS2  ( 10 required routines)
+        DB2LS2  DB3LS2  DB4INT  DB4LS2  DB5LS2  DB5LSQ  DB6LS2  DB6LSQ  DB7LS2
+        DNR1RB
+ 
+DBSLSQ  (  7 required routines)
+        DB2LSQ  DB3LSQ  DB4INT  DB4LSQ  DB5LSQ  DB6LSQ  DSVRGP
+ 
+DBSNAK  (  2 required routines)
+        DB2NAK  DSVRGP
+ 
+DBSOPK  ( 12 required routines)
+        DB2OPK  DB3OPK  DB4INT  DB4OPK  DCRBRB  DGER    DL2CRB  DL2TRB  DLFSRB
+        DNR1RB  DSVRGP  DTBSV
+ 
+DBSVAL  (  4 required routines)
+        DB2VAL  DB3DER  DB3INT  DB4DER
+ 
+DBSVLS  ( 19 required routines)
+        DB2VLS  DB3CPP  DB3DER  DB3LSQ  DB3VLS  DB4DER  DB4INT  DB4LSQ  DB4VLS
+        DB5LSQ  DB5VLS  DB6LSQ  DB6VLS  DB7VLS  DB8VLS  DP3DER  DPPDER  DSVRGN
+        DSVRGP
+ 
+DBVPFD  (  9 required routines)
+        DB11FD  DB2PFD  DB3PFD  DB4PFD  DB5PFD  DB6PFD  DB7PFD  DB8PFD  DB9PFD
+ 
+DBVPMS  ( 14 required routines)
+        DB2PMS  DB3PMS  DB4PMS  DB5PMS  DB6PMS  DCRGRG  DGER    DL2ARG  DL2CRG
+        DL2TRG  DLFIRG  DLFSRG  DNR1RR  DTRSV
+DCCBCB
+        ***** No required routines *****
+DCCBCG
+        ***** No required routines *****
+DCCGCB
+        ***** No required routines *****
+DCCGCG
+        ***** No required routines *****
+DCDGRD
+        ***** No required routines *****
+ 
+DCHBCB  (  1 required routine)
+        DCCBCB
+DCHFCG
+        ***** No required routines *****
+ 
+DCHGRD  (  2 required routines)
+        DC1DER  DC2GRD
+ 
+DCHHES  (  2 required routines)
+        DC1DER  DC2HES
+ 
+DCHJAC  (  2 required routines)
+        DC1DER  DC2JAC
+DCRBCB
+        ***** No required routines *****
+DCRBRB
+        ***** No required routines *****
+DCRBRG
+        ***** No required routines *****
+DCRGCG
+        ***** No required routines *****
+DCRGRB
+        ***** No required routines *****
+DCRGRG
+        ***** No required routines *****
+DCRRCR
+        ***** No required routines *****
+ 
+DCSAKM  (  3 required routines)
+        DC1SOR  DC2AKM  DSVRGP
+ 
+DCSBRB  (  1 required routine)
+        DCRBRB
+ 
+DCSCON  (  5 required routines)
+        DC2CON  DC4CON  DC5CON  DC6CON  DSVRGP
+ 
+DCSDEC  (  3 required routines)
+        DC1SOR  DC2DEC  DSVRGP
+ 
+DCSDER  (  2 required routines)
+        DP3DER  DPPDER
+DCSFRG
+        ***** No required routines *****
+ 
+DCSHER  (  3 required routines)
+        DC2HER  DC3HER  DSVRGP
+ 
+DCSINT  (  4 required routines)
+        DC1SOR  DC2DEC  DC2INT  DSVRGP
+ 
+DCSITG  (  2 required routines)
+        DP3DER  DPPITG
+ 
+DCSPER  (  3 required routines)
+        DC1SOR  DC2PER  DSVRGP
+ 
+DCSSCV  ( 18 required routines)
+        DC1SOR  DC2SCV  DC3SCV  DC4SCV  DC5SCV  DC6SCV  DC7SCV  DC8SCV  DC9SCV
+        DCRBRB  DGEMV   DGER    DL2TRB  DL2VRR  DL3VRR  DLFSRB  DSVRGP  DTBSV
+ 
+DCSSED  (  9 required routines)
+        DC1SOR  DC2AKM  DC2SED  DC3SED  DCSVAL  DP3DER  DPERMU  DPPDER  DSVRGP
+ 
+DCSSMH  ( 19 required routines)
+        DA1OT   DC1R    DC1SOR  DC1TRG  DC1WFR  DC2DEC  DC2INT  DC2SMH  DC3SMH
+        DC4SMH  DCSFRG  DF2LSQ  DGER    DGIRTS  DR2IVN  DR3IVN  DSVRGP  DTRSV
+        IDNAN
+ 
+DCSVAL  (  2 required routines)
+        DP3DER  DPPDER
+ 
+DCUNIT  (  2 required routines)
+        DC3NIT  DC4NIT
+DDERIV
+        ***** No required routines *****
+DDISL1
+        ***** No required routines *****
+ 
+DDISL2  (  1 required routine)
+        DDISLI
+DDISLI
+        ***** No required routines *****
+ 
+DDLPRS  (  5 required routines)
+        DD2PRS  DD3PRS  DD4PRS  DD5PRS  DD6PRS
+ 
+DEPICG  (  7 required routines)
+        DE2ICG  DZASUM  ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZSCAL
+ 
+DEPIHF  (  5 required routines)
+        DE2IHF  DZASUM  ZAXPY   ZHEMV   ZSCAL
+ 
+DEPIRG  (  3 required routines)
+        DE2IRG  DZASUM  ZAXPY
+ 
+DEPISB  (  2 required routines)
+        DE2ISB  DSBMV
+ 
+DEPISF  (  2 required routines)
+        DE2ISF  DSYMV
+DERIV
+        ***** No required routines *****
+ 
+DEVAHF  ( 11 required routines)
+        DCCGCG  DCHFCG  DE2AHF  DE3ASF  DE3CHF  ZAXPY   ZDOTC   ZHEMV   ZHER
+        ZHER2   ZSCAL
+ 
+DEVASB  (  4 required routines)
+        DCRBRB  DE2ASB  DE3ASF  DE3CSB
+ 
+DEVASF  (  6 required routines)
+        DCSFRG  DE2ASF  DE3ASF  DE3LSF  DSYMV   DSYR2
+ 
+DEVBHF  ( 11 required routines)
+        DCCGCG  DCHFCG  DE2BHF  DE3BSF  DE3CHF  ZAXPY   ZDOTC   ZHEMV   ZHER
+        ZHER2   ZSCAL
+ 
+DEVBSB  (  4 required routines)
+        DCRBRB  DE2BSB  DE3BSF  DE3CSB
+ 
+DEVBSF  (  6 required routines)
+        DCSFRG  DE2BSF  DE3BSF  DE3LSF  DSYMV   DSYR2
+ 
+DEVCCG  ( 20 required routines)
+        DCCGCG  DE2CCG  DE3CCG  DE3CCH  DE4CCG  DE5CCG  DE7CRG  DHYPOT  DZASUM
+        DZNRM2  IZAMAX  ZADD    ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZGEMV   ZGERC
+        ZSCAL   ZSWAP
+ 
+DEVCCH  ( 15 required routines)
+        DCCGCG  DE2CCH  DE3CCH  DE7CRG  DHYPOT  IZAMAX  ZADD    ZAXPY   ZDOTC
+        ZDOTU   ZDSCAL  ZGEMV   ZGERC   ZSCAL   ZSWAP
+ 
+DEVCHF  ( 18 required routines)
+        DCCGCG  DCHFCG  DCRGCG  DE2CHF  DE3CHF  DE4CHF  DE4CSF  DHYPOT  IZAMAX
+        ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZGERC   ZHEMV   ZHER    ZHER2   ZSCAL
+ 
+DEVCRG  ( 15 required routines)
+        DCRGRG  DE2CRG  DE3CRG  DE3CRH  DE4CRG  DE4CRH  DE5CRG  DE6CRG  DE7CRG
+        DGEMV   DGER    IZAMAX  ZDSCAL  ZSCAL   ZSWAP
+ 
+DEVCRH  (  9 required routines)
+        DCRGRG  DE2CRH  DE3CRH  DE4CRH  DE7CRG  DGEMV   IZAMAX  ZSCAL   ZSWAP
+ 
+DEVCSB  (  5 required routines)
+        DCRBRB  DE2CSB  DE3CSB  DE4CSF  DHYPOT
+ 
+DEVCSF  (  9 required routines)
+        DCSFRG  DE2CSF  DE3CSF  DE4CSF  DGEMV   DGER    DHYPOT  DSYMV   DSYR2
+ 
+DEVEHF  ( 18 required routines)
+        DCCGCG  DCHFCG  DCRRCR  DE2EHF  DE3ASF  DE3CHF  DE3ESF  DE4CHF  IZAMAX
+        ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZGERC   ZHEMV   ZHER    ZHER2   ZSCAL
+ 
+DEVESB  (  7 required routines)
+        DCRBRB  DE2ESB  DE3ASF  DE3CSB  DE3ESB  DGEMV   DGER
+ 
+DEVESF  (  8 required routines)
+        DCSFRG  DE2ESF  DE3ASF  DE3ESF  DE3LSF  DE4ESF  DSYMV   DSYR2
+ 
+DEVFHF  ( 18 required routines)
+        DCCGCG  DCHFCG  DCRRCR  DE2FHF  DE3BSF  DE3CHF  DE3ESF  DE4CHF  IZAMAX
+        ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZGERC   ZHEMV   ZHER    ZHER2   ZSCAL
+ 
+DEVFSB  (  7 required routines)
+        DCRBRB  DE2FSB  DE3BSF  DE3CSB  DE3ESB  DGEMV   DGER
+ 
+DEVFSF  (  8 required routines)
+        DCSFRG  DE2FSF  DE3BSF  DE3ESF  DE3LSF  DE4ESF  DSYMV   DSYR2
+ 
+DEVLCG  ( 19 required routines)
+        DCCGCG  DE2LCG  DE3CCG  DE3CCH  DE4CCG  DE7CRG  DHYPOT  DZASUM  DZNRM2
+        IZAMAX  ZADD    ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZGEMV   ZGERC   ZSCAL
+        ZSWAP
+ 
+DEVLCH  ( 15 required routines)
+        DCCGCG  DE2LCH  DE3CCH  DE7CRG  DHYPOT  IZAMAX  ZADD    ZAXPY   ZDOTC
+        ZDOTU   ZDSCAL  ZGEMV   ZGERC   ZSCAL   ZSWAP
+ 
+DEVLHF  ( 12 required routines)
+        DCCGCG  DCHFCG  DE2LHF  DE3CHF  DE4CSF  DHYPOT  ZAXPY   ZDOTC   ZHEMV
+        ZHER    ZHER2   ZSCAL
+ 
+DEVLRG  ( 10 required routines)
+        DCRGRG  DE2LRG  DE3CRG  DE3CRH  DE4CRG  DE4CRH  DE7CRG  DGEMV   DGER
+        ZSWAP
+ 
+DEVLRH  (  7 required routines)
+        DCRGRG  DE2LRH  DE3CRH  DE4CRH  DE7CRG  DGEMV   ZSWAP
+ 
+DEVLSB  (  5 required routines)
+        DCRBRB  DE2LSB  DE3CSB  DE4CSF  DHYPOT
+ 
+DEVLSF  (  7 required routines)
+        DCSFRG  DE2LSF  DE3LSF  DE4CSF  DHYPOT  DSYMV   DSYR2
+ 
+DFCOSI  (  2 required routines)
+        DF3TRI  DFFTRI
+ 
+DFCOST  ( 10 required routines)
+        DF2OST  DF3TRF  DF3TRI  DF4TRF  DF5TRF  DF6TRF  DF7TRF  DF8TRF  DFCOSI
+        DFFTRI
+DFDGRD
+        ***** No required routines *****
+ 
+DFDHES  (  1 required routine)
+        DF2HES
+ 
+DFDJAC  (  1 required routine)
+        DF2JAC
+ 
+DFFT2B  ( 13 required routines)
+        DF2T2B  DF2TCB  DF3T2B  DF3TCB  DF3TCI  DF4T2D  DF4TCB  DF5TCB  DF6TCB
+        DF7TCB  DF8TCB  DFFTCI  PRIME
+ 
+DFFT2D  ( 13 required routines)
+        DF2T2D  DF2TCF  DF3T2D  DF3TCF  DF3TCI  DF4T2D  DF4TCF  DF5TCF  DF6TCF
+        DF7TCF  DF8TCF  DFFTCI  PRIME
+ 
+DFFTCB  (  9 required routines)
+        DF2TCB  DF3TCB  DF3TCI  DF4TCB  DF5TCB  DF6TCB  DF7TCB  DF8TCB  DFFTCI
+ 
+DFFTCF  (  9 required routines)
+        DF2TCF  DF3TCF  DF3TCI  DF4TCF  DF5TCF  DF6TCF  DF7TCF  DF8TCF  DFFTCI
+ 
+DFFTCI  (  1 required routine)
+        DF3TCI
+ 
+DFFTRB  (  9 required routines)
+        DF2TRB  DF3TRB  DF3TRI  DF4TRB  DF5TRB  DF6TRB  DF7TRB  DF8TRB  DFFTRI
+ 
+DFFTRF  (  9 required routines)
+        DF2TRF  DF3TRF  DF3TRI  DF4TRF  DF5TRF  DF6TRF  DF7TRF  DF8TRF  DFFTRI
+ 
+DFFTRI  (  1 required routine)
+        DF3TRI
+ 
+DFNLSQ  ( 12 required routines)
+        DA1OT   DC1R    DC1TRG  DC1WFR  DCSFRG  DF2LSQ  DGER    DGIRTS  DR2IVN
+        DR3IVN  DTRSV   IDNAN
+ 
+DFPS2H  ( 45 required routines)
+        DF102H  DF112H  DF122H  DF132H  DF142H  DF152H  DF162H  DF192H  DF202H
+        DF2INT  DF2OST  DF2S2H  DF2TRB  DF2TRF  DF3S2H  DF3TRB  DF3TRF  DF3TRI
+        DF4S2H  DF4TRB  DF4TRF  DF5S2H  DF5TRB  DF5TRF  DF6S2H  DF6TRB  DF6TRF
+        DF7S2H  DF7TRB  DF7TRF  DF8S2H  DF8TRB  DF8TRF  DF9S2H  DFCOSI  DFFTRI
+        DFSINI  DQ2INB  DQ2INF  DQ2OSB  DQ2OSF  DQ3OSB  DQ3OSF  DQCOSI  DQSINI
+ 
+DFPS3H  ( 49 required routines)
+        DF103H  DF113H  DF122H  DF123H  DF132H  DF133H  DF142H  DF152H  DF162H
+        DF192H  DF202H  DF2INT  DF2OST  DF2S3H  DF2TRB  DF2TRF  DF3S3H  DF3TRB
+        DF3TRF  DF3TRI  DF4S3H  DF4TRB  DF4TRF  DF5S3H  DF5TRB  DF5TRF  DF6S2H
+        DF6S3H  DF6TRB  DF6TRF  DF7S3H  DF7TRB  DF7TRF  DF8S3H  DF8TRB  DF8TRF
+        DF9S2H  DF9S3H  DFCOSI  DFFTRI  DFSINI  DQ2INB  DQ2INF  DQ2OSB  DQ2OSF
+        DQ3OSB  DQ3OSF  DQCOSI  DQSINI
+ 
+DFQRUL  ( 24 required routines)
+        D9GAML  D9LGMC  DCOT    DCSEVL  DF2RUL  DF3RUL  DF3TRF  DF3TRI  DF4RUL
+        DF4TRF  DF5RUL  DF5TRF  DF6RUL  DF6TRF  DF7RUL  DF7TRF  DF8TRF  DFFTRI
+        DGAMMA  DPSI    DQ2OSF  DQ3OSF  DQCOSI  INITDS
+ 
+DFSINI  (  2 required routines)
+        DF3TRI  DFFTRI
+ 
+DFSINT  ( 10 required routines)
+        DF2INT  DF3TRF  DF3TRI  DF4TRF  DF5TRF  DF6TRF  DF7TRF  DF8TRF  DFFTRI
+        DFSINI
+ 
+DGAMMA  (  4 required routines)
+        D9GAML  D9LGMC  DCSEVL  INITDS
+ 
+DGDHES  (  1 required routine)
+        DG2HES
+ 
+DGGUES  (  1 required routine)
+        DG2UES
+ 
+DGPICG  (  8 required routines)
+        DG2ICG  DMUCRV  DZASUM  ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZSCAL
+ 
+DGPIRG  (  2 required routines)
+        DG2IRG  DZASUM
+ 
+DGPISP  (  2 required routines)
+        DG2ISP  DGEMV
+ 
+DGQRCF  (  3 required routines)
+        DG2RCF  DG3RCF  DG4RCF
+ 
+DGQRUL  ( 10 required routines)
+        D9GAML  D9LGMC  DCSEVL  DG2RCF  DG2RUL  DG3RCF  DG4RCF  DGAMMA  DRECCF
+        INITDS
+ 
+DGVCCG  ( 11 required routines)
+        DCCGCG  DG2CCG  DG3CCG  DG4CCG  DG5CCG  DZASUM  IZAMAX  ZAXPY   ZDOTU
+        ZSCAL   ZSWAP
+ 
+DGVCRG  ( 13 required routines)
+        DCRGRG  DG2CRG  DG3CRG  DG4CRG  DG5CRG  DG6CRG  DG7CRG  DGEMV   DGER
+        DHOUTR  IZAMAX  ZSCAL   ZSWAP
+ 
+DGVCSP  ( 15 required routines)
+        DCRGRG  DCSFRG  DE2CSF  DE3CSF  DE4CSF  DG2CSP  DGEMV   DGER    DHYPOT
+        DLFTDS  DLSLRT  DSYMV   DSYR2   DTRNRR  DTRSV
+ 
+DGVLCG  ( 10 required routines)
+        DCCGCG  DG2LCG  DG3CCG  DG4CCG  DG5CCG  DZASUM  IZAMAX  ZAXPY   ZDOTU
+        ZSWAP
+ 
+DGVLRG  ( 10 required routines)
+        DCRGRG  DG2LRG  DG3CRG  DG4CRG  DG5CRG  DG7CRG  DGEMV   DGER    DHOUTR
+        ZSWAP
+ 
+DGVLSP  ( 13 required routines)
+        DCRGRG  DCSFRG  DE2LSF  DE3LSF  DE4CSF  DG2LSP  DHYPOT  DLFTDS  DLSLRT
+        DSYMV   DSYR2   DTRNRR  DTRSV
+DHOUAP
+        ***** No required routines *****
+DHOUTR
+        ***** No required routines *****
+DHRRRR
+        ***** No required routines *****
+DHYPOT
+        ***** No required routines *****
+ 
+DINLAP  (  1 required routine)
+        DI3LAP
+DISL1
+        ***** No required routines *****
+ 
+DISL2   (  1 required routine)
+        DISLI
+DISLI
+        ***** No required routines *****
+ 
+DIVPAG  ( 40 required routines)
+        DCRBRB  DCRGRG  DCSFRG  DGBMV   DGEMV   DGER    DI10AG  DI12AG  DI13AG
+        DI2PAG  DI3PRK  DI4PAG  DI5PAG  DI6PAG  DI7PAG  DI8PAG  DI9PAG  DL2CDS
+        DL2CQS  DL2CRB  DL2CRG  DL2LDS  DL2LQS  DL2LRB  DL2LRG  DL2TRB  DL2TRG
+        DLFSDS  DLFSQS  DLFSRB  DLFSRG  DLFTDS  DLFTQS  DLSLRT  DNR1RB  DNR1RR
+        DSBMV   DSYMV   DTBSV   DTRSV
+ 
+DIVPBS  (  2 required routines)
+        DI2PBS  DI3PRK
+ 
+DIVPRK  (  3 required routines)
+        DI2PRK  DI3PRK  DI4PRK
+ 
+DJCGRC  (  7 required routines)
+        DCRBRB  DE2ASB  DE3ASF  DE3CSB  DJ2GRC  DP2GRC  DP3GRC
+ 
+DLCHRG  (  3 required routines)
+        DCRGRG  DCSFRG  DSYR
+ 
+DLDNCH  (  3 required routines)
+        DCRGRG  DLSLRT  DTRSV
+ 
+DLFCCB  ( 12 required routines)
+        DCCBCB  DL2CCB  DL2TCB  DNR1CB  DZASUM  IZAMAX  ZAXPY   ZDOTC   ZDSCAL
+        ZGERU   ZSCAL   ZSWAP
+ 
+DLFCCG  ( 10 required routines)
+        DL2CCG  DL2TCG  DZASUM  IZAMAX  ZAXPY   ZDOTC   ZDSCAL  ZGERU   ZSCAL
+        ZSWAP
+ 
+DLFCCT  (  4 required routines)
+        DL2CCT  DZASUM  ZAXPY   ZDSCAL
+ 
+DLFCDH  (  9 required routines)
+        DCHFCG  DL2CDH  DLFTDH  DZASUM  ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZTRSV
+ 
+DLFCDS  (  4 required routines)
+        DCSFRG  DL2CDS  DLFTDS  DTRSV
+ 
+DLFCHF  (  9 required routines)
+        DL2CHF  DLFTHF  DZASUM  IZAMAX  ZAXPY   ZDOTC   ZDSCAL  ZHER    ZSWAP
+ 
+DLFCQH  (  9 required routines)
+        DCCBCB  DL2CQH  DLFTQH  DZASUM  ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZTRSV
+ 
+DLFCQS  (  4 required routines)
+        DCRBRB  DL2CQS  DLFTQS  DTRSV
+ 
+DLFCRB  (  5 required routines)
+        DCRBRB  DGER    DL2CRB  DL2TRB  DNR1RB
+ 
+DLFCRG  (  5 required routines)
+        DCRGRG  DGER    DL2CRG  DL2TRG  DNR1RR
+ 
+DLFCRT  (  1 required routine)
+        DL2CRT
+ 
+DLFCSF  (  4 required routines)
+        DCSFRG  DL2CSF  DLFTSF  DSYR
+DLFDCB
+        ***** No required routines *****
+DLFDCG
+        ***** No required routines *****
+DLFDCT
+        ***** No required routines *****
+DLFDDH
+        ***** No required routines *****
+DLFDDS
+        ***** No required routines *****
+DLFDHF
+        ***** No required routines *****
+DLFDQH
+        ***** No required routines *****
+DLFDQS
+        ***** No required routines *****
+DLFDRB
+        ***** No required routines *****
+DLFDRG
+        ***** No required routines *****
+DLFDRT
+        ***** No required routines *****
+DLFDSF
+        ***** No required routines *****
+ 
+DLFICB  ( 11 required routines)
+        DLFSCB  IZAMAX  ZAXPY   ZDOTC   ZDOTU   ZQCDOT  ZQINI   ZQMUL   ZQSTO
+        ZQUDOT  ZTBSV
+ 
+DLFICG  ( 11 required routines)
+        DLFSCG  IZAMAX  ZAXPY   ZDOTC   ZDOTU   ZQCDOT  ZQINI   ZQMUL   ZQSTO
+        ZQUDOT  ZTRSV
+ 
+DLFIDH  ( 13 required routines)
+        DL3IHF  DLFSDH  DLSLCT  IZAMAX  ZAXPY   ZDOTC   ZDOTU   ZQADD   ZQDOTA
+        ZQINI   ZQMUL   ZQSTO   ZTRSV
+ 
+DLFIDS  (  6 required routines)
+        DLFSDS  DLSLRT  DQDOTA  DQDOTI  DQINI   DTRSV
+ 
+DLFIHF  ( 10 required routines)
+        DL3IHF  DLFSHF  IZAMAX  ZAXPY   ZDOTC   ZQADD   ZQDOTA  ZQINI   ZQMUL
+        ZQSTO
+ 
+DLFIQH  ( 12 required routines)
+        DL3IHF  DLFSQH  IZAMAX  ZAXPY   ZDOTC   ZDOTU   ZQADD   ZQDOTA  ZQINI
+        ZQMUL   ZQSTO   ZTBSV
+ 
+DLFIQS  (  5 required routines)
+        DLFSQS  DQDOTA  DQDOTI  DQINI   DTBSV
+ 
+DLFIRB  (  2 required routines)
+        DLFSRB  DTBSV
+ 
+DLFIRG  (  2 required routines)
+        DLFSRG  DTRSV
+ 
+DLFISF  (  4 required routines)
+        DLFSSF  DQDOTA  DQDOTI  DQINI
+ 
+DLFSCB  (  4 required routines)
+        ZAXPY   ZDOTC   ZDOTU   ZTBSV
+ 
+DLFSCG  (  4 required routines)
+        ZAXPY   ZDOTC   ZDOTU   ZTRSV
+ 
+DLFSDH  (  4 required routines)
+        DLSLCT  ZDOTC   ZDOTU   ZTRSV
+ 
+DLFSDS  (  2 required routines)
+        DLSLRT  DTRSV
+ 
+DLFSHF  (  2 required routines)
+        ZAXPY   ZDOTC
+ 
+DLFSQH  (  4 required routines)
+        ZAXPY   ZDOTC   ZDOTU   ZTBSV
+ 
+DLFSQS  (  1 required routine)
+        DTBSV
+ 
+DLFSRB  (  1 required routine)
+        DTBSV
+ 
+DLFSRG  (  1 required routine)
+        DTRSV
+DLFSSF
+        ***** No required routines *****
+ 
+DLFTCB  (  7 required routines)
+        DCCBCB  DL2TCB  IZAMAX  ZAXPY   ZGERU   ZSCAL   ZSWAP
+ 
+DLFTCG  (  6 required routines)
+        DL2TCG  IZAMAX  ZAXPY   ZGERU   ZSCAL   ZSWAP
+ 
+DLFTDH  (  4 required routines)
+        DCHFCG  ZDOTC   ZDOTU   ZTRSV
+ 
+DLFTDS  (  2 required routines)
+        DCSFRG  DTRSV
+ 
+DLFTHF  (  5 required routines)
+        IZAMAX  ZAXPY   ZDSCAL  ZHER    ZSWAP
+ 
+DLFTQH  (  4 required routines)
+        DCCBCB  ZDOTC   ZDOTU   ZTRSV
+ 
+DLFTQS  (  2 required routines)
+        DCRBRB  DTRSV
+ 
+DLFTRB  (  3 required routines)
+        DCRBRB  DGER    DL2TRB
+ 
+DLFTRG  (  3 required routines)
+        DCRGRG  DGER    DL2TRG
+ 
+DLFTSF  (  2 required routines)
+        DCSFRG  DSYR
+ 
+DLINCG  ( 14 required routines)
+        DL2CCG  DL2NCG  DL2TCG  DLINCT  DZASUM  IZAMAX  ZAXPY   ZDOTC   ZDOTU
+        ZDSCAL  ZGEMV   ZGERU   ZSCAL   ZSWAP
+ 
+DLINCT  (  3 required routines)
+        ZAXPY   ZGERU   ZSCAL
+ 
+DLINDS  (  8 required routines)
+        DCSFRG  DGER    DL2CDS  DL2NDS  DLFTDS  DLINRT  DSYR    DTRSV
+ 
+DLINRG  (  8 required routines)
+        DCRGRG  DGEMV   DGER    DL2CRG  DL2NRG  DL2TRG  DLINRT  DNR1RR
+ 
+DLINRT  (  1 required routine)
+        DGER
+ 
+DLPRS   (  5 required routines)
+        D2PRS   D3PRS   D4PRS   D5PRS   D6PRS
+ 
+DLQERR  (  3 required routines)
+        DGEMV   DGER    DL2ERR
+ 
+DLQRRR  (  3 required routines)
+        DGEMV   DGER    DL2RRR
+DLQRSL
+        ***** No required routines *****
+ 
+DLSACB  ( 22 required routines)
+        DCCBCB  DL2ACB  DL2CCB  DL2TCB  DLFICB  DLFSCB  DNR1CB  DZASUM  IZAMAX
+        ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZGERU   ZQCDOT  ZQINI   ZQMUL   ZQSTO
+        ZQUDOT  ZSCAL   ZSWAP   ZTBSV
+ 
+DLSACG  ( 20 required routines)
+        DL2ACG  DL2CCG  DL2TCG  DLFICG  DLFSCG  DZASUM  IZAMAX  ZAXPY   ZDOTC
+        ZDOTU   ZDSCAL  ZGERU   ZQCDOT  ZQINI   ZQMUL   ZQSTO   ZQUDOT  ZSCAL
+        ZSWAP   ZTRSV
+ 
+DLSADH  ( 20 required routines)
+        DCHFCG  DL2ADH  DL2CDH  DL3IHF  DLFIDH  DLFSDH  DLFTDH  DLSLCT  DZASUM
+        IZAMAX  ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZQADD   ZQDOTA  ZQINI   ZQMUL
+        ZQSTO   ZTRSV
+ 
+DLSADS  ( 11 required routines)
+        DCSFRG  DL2ADS  DL2CDS  DLFIDS  DLFSDS  DLFTDS  DLSLRT  DQDOTA  DQDOTI
+        DQINI   DTRSV
+ 
+DLSAHF  ( 18 required routines)
+        DL2AHF  DL2CHF  DL3IHF  DLFIHF  DLFSHF  DLFTHF  DZASUM  IZAMAX  ZAXPY
+        ZDOTC   ZDSCAL  ZHER    ZQADD   ZQDOTA  ZQINI   ZQMUL   ZQSTO   ZSWAP
+ 
+DLSAQH  ( 20 required routines)
+        DCCBCB  DL2AQH  DL2CQH  DL3IHF  DLFIQH  DLFSQH  DLFTQH  DZASUM  IZAMAX
+        ZAXPY   ZDOTC   ZDOTU   ZDSCAL  ZQADD   ZQDOTA  ZQINI   ZQMUL   ZQSTO
+        ZTBSV   ZTRSV
+ 
+DLSAQS  ( 11 required routines)
+        DCRBRB  DL2AQS  DL2CQS  DLFIQS  DLFSQS  DLFTQS  DQDOTA  DQDOTI  DQINI
+        DTBSV   DTRSV
+ 
+DLSARB  (  9 required routines)
+        DCRBRB  DGER    DL2ARB  DL2CRB  DL2TRB  DLFIRB  DLFSRB  DNR1RB  DTBSV
+ 
+DLSARG  (  9 required routines)
+        DCRGRG  DGER    DL2ARG  DL2CRG  DL2TRG  DLFIRG  DLFSRG  DNR1RR  DTRSV
+ 
+DLSASF  ( 10 required routines)
+        DCSFRG  DL2ASF  DL2CSF  DLFISF  DLFSSF  DLFTSF  DQDOTA  DQDOTI  DQINI
+        DSYR
+ 
+DLSBRR  ( 11 required routines)
+        DGEMV   DGER    DL2BRR  DL2RRR  DL3BRR  DLQRSL  DLSLRT  DPERMU  DQDOTI
+        DQINI   DTRSV
+ 
+DLSGRR  (  5 required routines)
+        DGEMV   DGER    DL2GRR  DL3GRR  DL3VRR
+ 
+DLSLCB  ( 16 required routines)
+        DCCBCB  DL2CCB  DL2LCB  DL2TCB  DLFSCB  DNR1CB  DZASUM  IZAMAX  ZAXPY
+        ZDOTC   ZDOTU   ZDSCAL  ZGERU   ZSCAL   ZSWAP   ZTBSV
+ 
+DLSLCC  ( 18 required routines)
+        DF2TCB  DF2TCF  DF3TCB  DF3TCF  DF3TCI  DF4TCB  DF4TCF  DF5TCB  DF5TCF
+        DF6TCB  DF6TCF  DF7TCB  DF7TCF  DF8TCB  DF8TCF  DFFTCI  DL2LCC  ZSWAP
+ 
+DLSLCG  ( 14 required routines)
+        DL2CCG  DL2LCG  DL2TCG  DLFSCG  DZASUM  IZAMAX  ZAXPY   ZDOTC   ZDOTU
+        ZDSCAL  ZGERU   ZSCAL   ZSWAP   ZTRSV
+ 
+DLSLCT  (  3 required routines)
+        ZDOTC   ZDOTU   ZTRSV
+ 
+DLSLDH  ( 12 required routines)
+        DCHFCG  DL2CDH  DL2LDH  DLFSDH  DLFTDH  DLSLCT  DZASUM  ZAXPY   ZDOTC
+        ZDOTU   ZDSCAL  ZTRSV
+ 
+DLSLDS  (  7 required routines)
+        DCSFRG  DL2CDS  DL2LDS  DLFSDS  DLFTDS  DLSLRT  DTRSV
+ 
+DLSLHF  ( 11 required routines)
+        DL2CHF  DL2LHF  DLFSHF  DLFTHF  DZASUM  IZAMAX  ZAXPY   ZDOTC   ZDSCAL
+        ZHER    ZSWAP
+ 
+DLSLQH  ( 12 required routines)
+        DCCBCB  DL2CQH  DL2LQH  DLFSQH  DLFTQH  DZASUM  ZAXPY   ZDOTC   ZDOTU
+        ZDSCAL  ZTBSV   ZTRSV
+ 
+DLSLQS  (  7 required routines)
+        DCRBRB  DL2CQS  DL2LQS  DLFSQS  DLFTQS  DTBSV   DTRSV
+ 
+DLSLRB  (  8 required routines)
+        DCRBRB  DGER    DL2CRB  DL2LRB  DL2TRB  DLFSRB  DNR1RB  DTBSV
+ 
+DLSLRG  (  8 required routines)
+        DCRGRG  DGER    DL2CRG  DL2LRG  DL2TRG  DLFSRG  DNR1RR  DTRSV
+ 
+DLSLRT  (  1 required routine)
+        DTRSV
+ 
+DLSLSF  (  6 required routines)
+        DCSFRG  DL2CSF  DL2LSF  DLFSSF  DLFTSF  DSYR
+ 
+DLSLTC  (  5 required routines)
+        DL2LTC  DL3LTC  ZAXPY   ZDOTU   ZSWAP
+ 
+DLSLTO  (  2 required routines)
+        DL2LTO  DL3LTO
+ 
+DLSQRR  (  6 required routines)
+        DGEMV   DGER    DL2QRR  DL2RRR  DLQRSL  DPERMU
+ 
+DLSVCR  ( 12 required routines)
+        DL2VCR  DL3VCR  DZASUM  DZNRM2  ZAXPY   ZDOTC   ZDOTU   ZDROT   ZGEMV
+        ZGERC   ZSCAL   ZSWAP
+ 
+DLSVRR  (  4 required routines)
+        DGEMV   DGER    DL2VRR  DL3VRR
+ 
+DLUPCH  (  1 required routine)
+        DCRGRG
+ 
+DLUPQR  (  3 required routines)
+        DCRGRG  DGEMV   DL2PQR
+ 
+DMCRCR  (  6 required routines)
+        DMUCRV  ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZSCAL
+ 
+DMOLCH  ( 40 required routines)
+        DC1SOR  DC2DEC  DC2INT  DCRBRB  DCRGRG  DCSDER  DCSFRG  DGBMV   DGEMV
+        DGER    DI10AG  DI12AG  DI3PRK  DI5PAG  DI7PAG  DI8PAG  DI9PAG  DL2TRB
+        DL2TRG  DLFSDS  DLFSQS  DLFSRB  DLFSRG  DLFTDS  DLFTQS  DLSLRT  DM2LCH
+        DM3LCH  DM4LCH  DM5LCH  DM6LCH  DM7LCH  DM8LCH  DP3DER  DPPDER  DSBMV
+        DSVRGP  DSYMV   DTBSV   DTRSV
+ 
+DMRRRR  (  2 required routines)
+        DGEMV   DMURRV
+ 
+DMUCBV  (  4 required routines)
+        ZDOTC   ZDOTU   ZGBMV   ZSCAL
+ 
+DMUCRV  (  5 required routines)
+        ZAXPY   ZDOTC   ZDOTU   ZGEMV   ZSCAL
+ 
+DMURBV  (  1 required routine)
+        DGBMV
+ 
+DMURRV  (  1 required routine)
+        DGEMV
+ 
+DMXTXF  (  2 required routines)
+        DGEMV   DMURRV
+ 
+DMXTYF  (  2 required routines)
+        DGEMV   DMURRV
+DMXYTF
+        ***** No required routines *****
+ 
+DN0ONF  ( 11 required routines)
+        DA1OT   DCSFRG  DN3ONF  DN4ONF  DN5ONF  DN5ONG  DN6ONF  DN6ONG  DN7ONG
+        DN8ONG  DN9ONG
+ 
+DNCONF  ( 11 required routines)
+        DA1OT   DCSFRG  DN2ONF  DN3ONF  DN4ONF  DN5ONF  DN5ONG  DN6ONG  DN7ONG
+        DN8ONG  DN9ONG
+ 
+DNCONG  ( 10 required routines)
+        DA1OT   DCSFRG  DN2ONG  DN3ONG  DN4ONG  DN5ONG  DN6ONG  DN7ONG  DN8ONG
+        DN9ONG
+ 
+DNEQNF  (  8 required routines)
+        DN2QNF  DN3QNF  DN4QNF  DN5QNF  DN6QNF  DN7QNF  DN8QNF  DN9QNF
+ 
+DNEQNJ  (  7 required routines)
+        DN2QNJ  DN3QNJ  DN5QNF  DN6QNF  DN7QNF  DN8QNF  DN9QNF
+ 
+DNR1CB  (  1 required routine)
+        DZASUM
+DNR1RB
+        ***** No required routines *****
+DNR1RR
+        ***** No required routines *****
+ 
+DNR2RR  (  1 required routine)
+        DHYPOT
+DNRIRR
+        ***** No required routines *****
+ 
+DPCGRC  (  6 required routines)
+        DCRBRB  DE2ASB  DE3ASF  DE3CSB  DP2GRC  DP3GRC
+ 
+DPERMA  (  2 required routines)
+        DP2RMA  DPERMU
+DPERMU
+        ***** No required routines *****
+ 
+DPLOTP  (  2 required routines)
+        DF1T    DSSFMT
+ 
+DPOLRG  (  4 required routines)
+        DGEMV   DMRRRR  DMURRV  DP2LRG
+ 
+DPPDER  (  1 required routine)
+        DP3DER
+ 
+DPPITG  (  1 required routine)
+        DP3DER
+ 
+DPPVAL  (  2 required routines)
+        DP3DER  DPPDER
+DPRDCT
+        ***** No required routines *****
+ 
+DQAND   (  1 required routine)
+        DQ3ND
+ 
+DQCOSB  ( 11 required routines)
+        DF3TRB  DF3TRI  DF4TRB  DF5TRB  DF6TRB  DF7TRB  DF8TRB  DFFTRI  DQ2OSB
+        DQ3OSB  DQCOSI
+ 
+DQCOSF  ( 11 required routines)
+        DF3TRF  DF3TRI  DF4TRF  DF5TRF  DF6TRF  DF7TRF  DF8TRF  DFFTRI  DQ2OSF
+        DQ3OSF  DQCOSI
+ 
+DQCOSI  (  2 required routines)
+        DF3TRI  DFFTRI
+ 
+DQD2DR  (  2 required routines)
+        DP3DER  DQ3DER
+ 
+DQD2VL  (  3 required routines)
+        DP3DER  DQ3DER  DQD2DR
+ 
+DQD3DR  (  2 required routines)
+        DP3DER  DQ3DER
+ 
+DQD3VL  (  3 required routines)
+        DP3DER  DQ3DER  DQD3DR
+ 
+DQDAG   ( 10 required routines)
+        DQ10G   DQ2AG   DQ3AG   DQ4AG   DQ4NG   DQ5AG   DQ6AG   DQ7AG   DQ8AG
+        DQ9AG
+ 
+DQDAGI  (  6 required routines)
+        DQ10G   DQ2AGI  DQ3AGI  DQ4AGI  DQ4AWO  DQ4NG
+ 
+DQDAGP  (  6 required routines)
+        DQ10G   DQ2AGP  DQ3AGP  DQ4AWO  DQ4NG   DQ9AG
+ 
+DQDAGS  (  6 required routines)
+        DQ10G   DQ2AGS  DQ3AGS  DQ4AWO  DQ4NG   DQ9AG
+ 
+DQDAWC  (  8 required routines)
+        DQ10G   DQ2AWC  DQ3AWC  DQ4AWC  DQ4NG   DQ5AWC  DQ7AWO  DQ8AWO
+ 
+DQDAWF  ( 12 required routines)
+        DQ10G   DQ2AWF  DQ3AGI  DQ3AWF  DQ3AWO  DQ4AGI  DQ4AWO  DQ4NG   DQ5AWO
+        DQ6AWO  DQ7AWO  DQ8AWO
+ 
+DQDAWO  (  9 required routines)
+        DQ10G   DQ2AWO  DQ3AWO  DQ4AWO  DQ4NG   DQ5AWO  DQ6AWO  DQ7AWO  DQ8AWO
+ 
+DQDAWS  (  9 required routines)
+        DQ10G   DQ2AWS  DQ3AWS  DQ4AWS  DQ4NG   DQ5AWS  DQ6AWS  DQ7AWO  DQ8AWO
+ 
+DQDNG   (  2 required routines)
+        DQ3NG   DQ4NG
+DQDOTA
+        ***** No required routines *****
+ 
+DQDOTI  (  1 required routine)
+        DQINI
+ 
+DQDVAL  (  3 required routines)
+        DP3DER  DQ3DER  DQDDER
+DQINI
+        ***** No required routines *****
+ 
+DQPROG  (  2 required routines)
+        DA1OT   DQ2ROG
+ 
+DQSINB  ( 12 required routines)
+        DF3TRB  DF3TRI  DF4TRB  DF5TRB  DF6TRB  DF7TRB  DF8TRB  DFFTRI  DQ2INB
+        DQ3OSB  DQCOSI  DQSINI
+ 
+DQSINF  ( 12 required routines)
+        DF3TRF  DF3TRI  DF4TRF  DF5TRF  DF6TRF  DF7TRF  DF8TRF  DFFTRI  DQ2INF
+        DQ3OSF  DQCOSI  DQSINI
+ 
+DQSINI  (  3 required routines)
+        DF3TRI  DFFTRI  DQCOSI
+ 
+DRATCH  ( 10 required routines)
+        DCRGRG  DGER    DL2CRG  DL2LRG  DL2TRG  DLFSRG  DNR1RR  DR2TCH  DR3TCH
+        DTRSV
+ 
+DRCURV  ( 30 required routines)
+        D9GAML  D9LGMC  DBETAI  DBETDF  DC1DIV  DC1F    DC1T    DC1WFR  DCSEVL
+        DERFC   DFDF    DG1AOV  DG3AOV  DGAMMA  DLBETA  DLNGAM  DLNREL  DR2ORP
+        DR2TAP  DR2URV  DR3ORP  DR3TAP  DR4ORP  DR4TAP  DR5TAP  DRCOEF  DSVRGP
+        DTDF    DWRAOV  INITDS
+ 
+DRECCF  (  5 required routines)
+        D9GAML  D9LGMC  DCSEVL  DGAMMA  INITDS
+ 
+DRECQR  (  1 required routine)
+        DR2CQR
+ 
+DRLINE  ( 13 required routines)
+        DA1OT   DC1DIV  DC1R    DC1TRG  DC1WFR  DCSFRG  DGER    DGIRTS  DR2IVN
+        DR2TDB  DR3IVN  DTRSV   IDNAN
+DSDOT
+        ***** No required routines *****
+DSRCH
+        ***** No required routines *****
+DSUB
+        ***** No required routines *****
+ 
+DSURF   ( 12 required routines)
+        DGEMV   DGER    DL2QRR  DL2RRR  DLQRSL  DPERMU  DS2RF   DS3RF   DS4RF
+        DS5RF   DS6RF   DS7RF
+DSVRBN
+        ***** No required routines *****
+DSVRBP
+        ***** No required routines *****
+DSVRGN
+        ***** No required routines *****
+DSVRGP
+        ***** No required routines *****
+DTBMV
+        ***** No required routines *****
+DTRMV
+        ***** No required routines *****
+DTRNRR
+        ***** No required routines *****
+ 
+DTWODQ  ( 22 required routines)
+        DQ4NG   DT10DQ  DT12DQ  DT13DQ  DT14DQ  DT15DQ  DT16DQ  DT17DQ  DT18DQ
+        DT19DQ  DT20DQ  DT22DQ  DT23DQ  DT24DQ  DT25DQ  DT26DQ  DT27DQ  DT28DQ
+        DT29DQ  DT2ODQ  DT3ODQ  DT4ODQ
+ 
+DUMCGF  (  2 required routines)
+        DCDGRD  DU2CGF
+ 
+DUMCGG  (  1 required routine)
+        DU2CGG
+ 
+DUMIAH  ( 15 required routines)
+        DCSFRG  DU10AH  DU11NF  DU13NF  DU14NF  DU18NF  DU19NF  DU2IAH  DU3IAH
+        DU4INF  DU5INF  DU6INF  DU7IAH  DU8IAH  DU9IAH
+ 
+DUMIDH  ( 16 required routines)
+        DCSFRG  DG2HES  DU10AH  DU11NF  DU13NF  DU14NF  DU18NF  DU19NF  DU2IDH
+        DU3IDH  DU4INF  DU5INF  DU6INF  DU7IAH  DU8IAH  DU9IAH
+ 
+DUMINF  ( 17 required routines)
+        DCDGRD  DFDGRD  DU10NF  DU11NF  DU13NF  DU14NF  DU15NF  DU17NF  DU18NF
+        DU19NF  DU2INF  DU3INF  DU4INF  DU5INF  DU6INF  DU8INF  DU9INF
+ 
+DUMING  ( 15 required routines)
+        DU10NF  DU11NF  DU13NF  DU14NF  DU15NF  DU17NG  DU18NF  DU19NF  DU2ING
+        DU3ING  DU4INF  DU5INF  DU6INF  DU8INF  DU9INF
+ 
+DUMPOL  (  2 required routines)
+        DU2POL  DU3POL
+ 
+DUNLSF  ( 18 required routines)
+        DCSFRG  DF2JAC  DGEMV   DGER    DL2RRR  DU10SF  DU11NF  DU11SF  DU12SF
+        DU13SF  DU2LSF  DU3LSF  DU4LSF  DU5LSF  DU6LSF  DU7LSF  DU8LSF  DU9LSF
+ 
+DUNLSJ  ( 17 required routines)
+        DCSFRG  DGEMV   DGER    DL2RRR  DU10SF  DU11NF  DU11SF  DU12SF  DU13SF
+        DU2LSJ  DU3LSJ  DU4LSF  DU5LSF  DU6LSF  DU7LSF  DU8LSF  DU9LSF
+DUVMGS
+        ***** No required routines *****
+ 
+DUVMID  (  1 required routine)
+        DU3MID
+DUVMIF
+        ***** No required routines *****
+ 
+DVCONC  ( 18 required routines)
+        DF2TCB  DF2TCF  DF3TCB  DF3TCF  DF3TCI  DF4TCB  DF4TCF  DF5TCB  DF5TCF
+        DF6TCB  DF6TCF  DF7TCB  DF7TCF  DF8TCB  DF8TCF  DFFTCI  DV2ONC  ZDSCAL
+ 
+DVCONR  ( 17 required routines)
+        DF2TCB  DF2TCF  DF3TCB  DF3TCF  DF3TCI  DF4TCB  DF4TCF  DF5TCB  DF5TCF
+        DF6TCB  DF6TCF  DF7TCB  DF7TCF  DF8TCB  DF8TCF  DFFTCI  DV2ONR
+ 
+DWRCRL  ( 11 required routines)
+        DC1FMT  DC1TRI  DF1TCR  DF3TCR  DI1CMX  DW2CRL  DW3CRL  DW4CRL  W5CRL
+        W6CRL   W9CRL
+ 
+DWRCRN  ( 11 required routines)
+        DC1FMT  DC1TRI  DF1TCR  DF3TCR  DI1CMX  DW2CRL  DW3CRL  DW4CRL  W5CRL
+        W6CRL   W9CRL
+DZANLY
+        ***** No required routines *****
+DZASUM
+        ***** No required routines *****
+DZBREN
+        ***** No required routines *****
+DZNRM2
+        ***** No required routines *****
+ 
+DZPLRC  (  6 required routines)
+        DQINI   DZ3LRC  DZ4LRC  ZQINI   ZQMUL   ZQSTO
+ 
+DZPOCC  ( 16 required routines)
+        DQINI   DZ10CC  DZ11CC  DZ3OCC  DZ4LRC  DZ4OCC  DZ5OCC  DZ6OCC  DZ7OCC
+        DZ8OCC  DZ9OCC  ZQINI   ZQMUL   ZQSTO   ZSCAL   ZSWAP
+ 
+DZPORC  ( 10 required routines)
+        DQINI   DZ10RC  DZ3LRC  DZ3ORC  DZ4ORC  DZ5ORC  DZ6ORC  DZ7ORC  DZ8ORC
+        DZ9ORC
+DZREAL
+        ***** No required routines *****
+ 
+EPICG   (  7 required routines)
+        CAXPY   CDOTC   CDOTU   CGEMV   CSCAL   E2ICG   SCASUM
+ 
+EPIHF   (  5 required routines)
+        CAXPY   CHEMV   CSCAL   E2IHF   SCASUM
+ 
+EPIRG   (  3 required routines)
+        CAXPY   E2IRG   SCASUM
+ 
+EPISB   (  2 required routines)
+        E2ISB   SSBMV
+ 
+EPISF   (  2 required routines)
+        E2ISF   SSYMV
+ 
+EVAHF   ( 11 required routines)
+        CAXPY   CCGCG   CDOTC   CHEMV   CHER    CHER2   CHFCG   CSCAL   E2AHF
+        E3ASF   E3CHF
+ 
+EVASB   (  4 required routines)
+        CRBRB   E2ASB   E3ASF   E3CSB
+ 
+EVASF   (  6 required routines)
+        CSFRG   E2ASF   E3ASF   E3LSF   SSYMV   SSYR2
+ 
+EVBHF   ( 11 required routines)
+        CAXPY   CCGCG   CDOTC   CHEMV   CHER    CHER2   CHFCG   CSCAL   E2BHF
+        E3BSF   E3CHF
+ 
+EVBSB   (  4 required routines)
+        CRBRB   E2BSB   E3BSF   E3CSB
+ 
+EVBSF   (  6 required routines)
+        CSFRG   E2BSF   E3BSF   E3LSF   SSYMV   SSYR2
+ 
+EVCCG   ( 20 required routines)
+        CADD    CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CSCAL   CSSCAL
+        CSWAP   E2CCG   E3CCG   E3CCH   E4CCG   E5CCG   E7CRG   HYPOT   ICAMAX
+        SCASUM  SCNRM2
+ 
+EVCCH   ( 15 required routines)
+        CADD    CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CSCAL   CSSCAL
+        CSWAP   E2CCH   E3CCH   E7CRG   HYPOT   ICAMAX
+ 
+EVCHF   ( 18 required routines)
+        CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CHEMV   CHER    CHER2
+        CHFCG   CRGCG   CSCAL   E2CHF   E3CHF   E4CHF   E4CSF   HYPOT   ICAMAX
+ 
+EVCRG   ( 15 required routines)
+        CRGRG   CSCAL   CSSCAL  CSWAP   E2CRG   E3CRG   E3CRH   E4CRG   E4CRH
+        E5CRG   E6CRG   E7CRG   ICAMAX  SGEMV   SGER
+ 
+EVCRH   (  9 required routines)
+        CRGRG   CSCAL   CSWAP   E2CRH   E3CRH   E4CRH   E7CRG   ICAMAX  SGEMV
+ 
+EVCSB   (  5 required routines)
+        CRBRB   E2CSB   E3CSB   E4CSF   HYPOT
+ 
+EVCSF   (  9 required routines)
+        CSFRG   E2CSF   E3CSF   E4CSF   HYPOT   SGEMV   SGER    SSYMV   SSYR2
+ 
+EVEHF   ( 18 required routines)
+        CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CHEMV   CHER    CHER2
+        CHFCG   CRRCR   CSCAL   E2EHF   E3ASF   E3CHF   E3ESF   E4CHF   ICAMAX
+ 
+EVESB   (  7 required routines)
+        CRBRB   E2ESB   E3ASF   E3CSB   E3ESB   SGEMV   SGER
+ 
+EVESF   (  8 required routines)
+        CSFRG   E2ESF   E3ASF   E3ESF   E3LSF   E4ESF   SSYMV   SSYR2
+ 
+EVFHF   ( 18 required routines)
+        CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CHEMV   CHER    CHER2
+        CHFCG   CRRCR   CSCAL   E2FHF   E3BSF   E3CHF   E3ESF   E4CHF   ICAMAX
+ 
+EVFSB   (  7 required routines)
+        CRBRB   E2FSB   E3BSF   E3CSB   E3ESB   SGEMV   SGER
+ 
+EVFSF   (  8 required routines)
+        CSFRG   E2FSF   E3BSF   E3ESF   E3LSF   E4ESF   SSYMV   SSYR2
+ 
+EVLCG   ( 19 required routines)
+        CADD    CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CSCAL   CSSCAL
+        CSWAP   E2LCG   E3CCG   E3CCH   E4CCG   E7CRG   HYPOT   ICAMAX  SCASUM
+        SCNRM2
+ 
+EVLCH   ( 15 required routines)
+        CADD    CAXPY   CCGCG   CDOTC   CDOTU   CGEMV   CGERC   CSCAL   CSSCAL
+        CSWAP   E2LCH   E3CCH   E7CRG   HYPOT   ICAMAX
+ 
+EVLHF   ( 12 required routines)
+        CAXPY   CCGCG   CDOTC   CHEMV   CHER    CHER2   CHFCG   CSCAL   E2LHF
+        E3CHF   E4CSF   HYPOT
+ 
+EVLRG   ( 10 required routines)
+        CRGRG   CSWAP   E2LRG   E3CRG   E3CRH   E4CRG   E4CRH   E7CRG   SGEMV
+        SGER
+ 
+EVLRH   (  7 required routines)
+        CRGRG   CSWAP   E2LRH   E3CRH   E4CRH   E7CRG   SGEMV
+ 
+EVLSB   (  5 required routines)
+        CRBRB   E2LSB   E3CSB   E4CSF   HYPOT
+ 
+EVLSF   (  7 required routines)
+        CSFRG   E2LSF   E3LSF   E4CSF   HYPOT   SSYMV   SSYR2
+ 
+FCOSI   (  2 required routines)
+        F3TRI   FFTRI
+ 
+FCOST   ( 10 required routines)
+        F2OST   F3TRF   F3TRI   F4TRF   F5TRF   F6TRF   F7TRF   F8TRF   FCOSI
+        FFTRI
+FDGRD
+        ***** No required routines *****
+ 
+FDHES   (  1 required routine)
+        F2HES
+ 
+FDJAC   (  1 required routine)
+        F2JAC
+ 
+FFT2B   ( 13 required routines)
+        F2T2B   F2TCB   F3T2B   F3TCB   F3TCI   F4T2D   F4TCB   F5TCB   F6TCB
+        F7TCB   F8TCB   FFTCI   PRIME
+ 
+FFT2D   ( 13 required routines)
+        F2T2D   F2TCF   F3T2D   F3TCF   F3TCI   F4T2D   F4TCF   F5TCF   F6TCF
+        F7TCF   F8TCF   FFTCI   PRIME
+ 
+FFTCB   (  9 required routines)
+        F2TCB   F3TCB   F3TCI   F4TCB   F5TCB   F6TCB   F7TCB   F8TCB   FFTCI
+ 
+FFTCF   (  9 required routines)
+        F2TCF   F3TCF   F3TCI   F4TCF   F5TCF   F6TCF   F7TCF   F8TCF   FFTCI
+ 
+FFTCI   (  1 required routine)
+        F3TCI
+ 
+FFTRB   (  9 required routines)
+        F2TRB   F3TRB   F3TRI   F4TRB   F5TRB   F6TRB   F7TRB   F8TRB   FFTRI
+ 
+FFTRF   (  9 required routines)
+        F2TRF   F3TRF   F3TRI   F4TRF   F5TRF   F6TRF   F7TRF   F8TRF   FFTRI
+ 
+FFTRI   (  1 required routine)
+        F3TRI
+ 
+FNLSQ   ( 12 required routines)
+        A1OT    C1R     C1TRG   C1WFR   CSFRG   F2LSQ   GIRTS   ISNAN   R2IVN
+        R3IVN   SGER    STRSV
+ 
+FPS2H   ( 45 required routines)
+        F102H   F112H   F122H   F132H   F142H   F152H   F162H   F192H   F202H
+        F2INT   F2OST   F2S2H   F2TRB   F2TRF   F3S2H   F3TRB   F3TRF   F3TRI
+        F4S2H   F4TRB   F4TRF   F5S2H   F5TRB   F5TRF   F6S2H   F6TRB   F6TRF
+        F7S2H   F7TRB   F7TRF   F8S2H   F8TRB   F8TRF   F9S2H   FCOSI   FFTRI
+        FSINI   Q2INB   Q2INF   Q2OSB   Q2OSF   Q3OSB   Q3OSF   QCOSI   QSINI
+ 
+FPS3H   ( 49 required routines)
+        F103H   F113H   F122H   F123H   F132H   F133H   F142H   F152H   F162H
+        F192H   F202H   F2INT   F2OST   F2S3H   F2TRB   F2TRF   F3S3H   F3TRB
+        F3TRF   F3TRI   F4S3H   F4TRB   F4TRF   F5S3H   F5TRB   F5TRF   F6S2H
+        F6S3H   F6TRB   F6TRF   F7S3H   F7TRB   F7TRF   F8S3H   F8TRB   F8TRF
+        F9S2H   F9S3H   FCOSI   FFTRI   FSINI   Q2INB   Q2INF   Q2OSB   Q2OSF
+        Q3OSB   Q3OSF   QCOSI   QSINI
+ 
+FQRUL   ( 24 required routines)
+        COT     CSEVL   F2RUL   F3RUL   F3TRF   F3TRI   F4RUL   F4TRF   F5RUL
+        F5TRF   F6RUL   F6TRF   F7RUL   F7TRF   F8TRF   FFTRI   GAMMA   INITS
+        PSI     Q2OSF   Q3OSF   QCOSI   R9GAML  R9LGMC
+ 
+FSINI   (  2 required routines)
+        F3TRI   FFTRI
+ 
+FSINT   ( 10 required routines)
+        F2INT   F3TRF   F3TRI   F4TRF   F5TRF   F6TRF   F7TRF   F8TRF   FFTRI
+        FSINI
+ 
+GAMMA   (  4 required routines)
+        CSEVL   INITS   R9GAML  R9LGMC
+ 
+GDHES   (  1 required routine)
+        G2HES
+ 
+GGUES   (  1 required routine)
+        G2UES
+ 
+GPICG   (  8 required routines)
+        CAXPY   CDOTC   CDOTU   CGEMV   CSCAL   G2ICG   MUCRV   SCASUM
+ 
+GPIRG   (  2 required routines)
+        G2IRG   SCASUM
+ 
+GPISP   (  2 required routines)
+        G2ISP   SGEMV
+ 
+GQRCF   (  3 required routines)
+        G2RCF   G3RCF   G4RCF
+ 
+GQRUL   ( 10 required routines)
+        CSEVL   G2RCF   G2RUL   G3RCF   G4RCF   GAMMA   INITS   R9GAML  R9LGMC
+        RECCF
+ 
+GVCCG   ( 11 required routines)
+        CAXPY   CCGCG   CDOTU   CSCAL   CSWAP   G2CCG   G3CCG   G4CCG   G5CCG
+        ICAMAX  SCASUM
+ 
+GVCRG   ( 13 required routines)
+        CRGRG   CSCAL   CSWAP   G2CRG   G3CRG   G4CRG   G5CRG   G6CRG   G7CRG
+        ICAMAX  SGEMV   SGER    SHOUTR
+ 
+GVCSP   ( 15 required routines)
+        CRGRG   CSFRG   E2CSF   E3CSF   E4CSF   G2CSP   HYPOT   LFTDS   LSLRT
+        SGEMV   SGER    SSYMV   SSYR2   STRSV   TRNRR
+ 
+GVLCG   ( 10 required routines)
+        CAXPY   CCGCG   CDOTU   CSWAP   G2LCG   G3CCG   G4CCG   G5CCG   ICAMAX
+        SCASUM
+ 
+GVLRG   ( 10 required routines)
+        CRGRG   CSWAP   G2LRG   G3CRG   G4CRG   G5CRG   G7CRG   SGEMV   SGER
+        SHOUTR
+ 
+GVLSP   ( 13 required routines)
+        CRGRG   CSFRG   E2LSF   E3LSF   E4CSF   G2LSP   HYPOT   LFTDS   LSLRT
+        SSYMV   SSYR2   STRSV   TRNRR
+HRRRR
+        ***** No required routines *****
+HYPOT
+        ***** No required routines *****
+IADD
+        ***** No required routines *****
+ICAMAX
+        ***** No required routines *****
+ICAMIN
+        ***** No required routines *****
+IDAMIN
+        ***** No required routines *****
+ 
+IDYWK   (  1 required routine)
+        NDAYS
+IIDEX
+        ***** No required routines *****
+IIMAX
+        ***** No required routines *****
+IIMIN
+        ***** No required routines *****
+ 
+INLAP   (  1 required routine)
+        I3LAP
+ISAMIN
+        ***** No required routines *****
+ISRCH
+        ***** No required routines *****
+ISUB
+        ***** No required routines *****
+ISUM
+        ***** No required routines *****
+ 
+IVPAG   ( 40 required routines)
+        CRBRB   CRGRG   CSFRG   I10AG   I12AG   I13AG   I2PAG   I3PRK   I4PAG
+        I5PAG   I6PAG   I7PAG   I8PAG   I9PAG   L2CDS   L2CQS   L2CRB   L2CRG
+        L2LDS   L2LQS   L2LRB   L2LRG   L2TRB   L2TRG   LFSDS   LFSQS   LFSRB
+        LFSRG   LFTDS   LFTQS   LSLRT   NR1RB   NR1RR   SGBMV   SGEMV   SGER
+        SSBMV   SSYMV   STBSV   STRSV
+ 
+IVPBS   (  2 required routines)
+        I2PBS   I3PRK
+ 
+IVPRK   (  3 required routines)
+        I2PRK   I3PRK   I4PRK
+IZAMAX
+        ***** No required routines *****
+IZAMIN
+        ***** No required routines *****
+ 
+JCGRC   (  7 required routines)
+        CRBRB   E2ASB   E3ASF   E3CSB   J2GRC   P2GRC   P3GRC
+ 
+LCHRG   (  3 required routines)
+        CRGRG   CSFRG   SSYR
+ 
+LDNCH   (  3 required routines)
+        CRGRG   LSLRT   STRSV
+ 
+LFCCB   ( 12 required routines)
+        CAXPY   CCBCB   CDOTC   CGERU   CSCAL   CSSCAL  CSWAP   ICAMAX  L2CCB
+        L2TCB   NR1CB   SCASUM
+ 
+LFCCG   ( 10 required routines)
+        CAXPY   CDOTC   CGERU   CSCAL   CSSCAL  CSWAP   ICAMAX  L2CCG   L2TCG
+        SCASUM
+ 
+LFCCT   (  4 required routines)
+        CAXPY   CSSCAL  L2CCT   SCASUM
+ 
+LFCDH   (  9 required routines)
+        CAXPY   CDOTC   CDOTU   CHFCG   CSSCAL  CTRSV   L2CDH   LFTDH   SCASUM
+ 
+LFCDS   (  4 required routines)
+        CSFRG   L2CDS   LFTDS   STRSV
+ 
+LFCHF   (  9 required routines)
+        CAXPY   CDOTC   CHER    CSSCAL  CSWAP   ICAMAX  L2CHF   LFTHF   SCASUM
+ 
+LFCQH   (  9 required routines)
+        CAXPY   CCBCB   CDOTC   CDOTU   CSSCAL  CTRSV   L2CQH   LFTQH   SCASUM
+ 
+LFCQS   (  4 required routines)
+        CRBRB   L2CQS   LFTQS   STRSV
+ 
+LFCRB   (  5 required routines)
+        CRBRB   L2CRB   L2TRB   NR1RB   SGER
+ 
+LFCRG   (  5 required routines)
+        CRGRG   L2CRG   L2TRG   NR1RR   SGER
+ 
+LFCRT   (  1 required routine)
+        L2CRT
+ 
+LFCSF   (  4 required routines)
+        CSFRG   L2CSF   LFTSF   SSYR
+LFDCB
+        ***** No required routines *****
+LFDCG
+        ***** No required routines *****
+LFDCT
+        ***** No required routines *****
+LFDDH
+        ***** No required routines *****
+LFDDS
+        ***** No required routines *****
+LFDHF
+        ***** No required routines *****
+LFDQH
+        ***** No required routines *****
+LFDQS
+        ***** No required routines *****
+LFDRB
+        ***** No required routines *****
+LFDRG
+        ***** No required routines *****
+LFDRT
+        ***** No required routines *****
+LFDSF
+        ***** No required routines *****
+ 
+LFICB   (  8 required routines)
+        CAXPY   CDOTC   CDOTU   CTBSV   CZCDOT  CZUDOT  ICAMAX  LFSCB
+ 
+LFICG   (  8 required routines)
+        CAXPY   CDOTC   CDOTU   CTRSV   CZCDOT  CZUDOT  ICAMAX  LFSCG
+ 
+LFIDH   ( 15 required routines)
+        CAXPY   CDOTC   CDOTU   CTRSV   CZADD   CZDOTA  CZINI   CZMUL   CZSTO
+        ICAMAX  L3IHF   LFSDH   LSLCT   SDADD   SDMUL
+ 
+LFIDS   (  9 required routines)
+        LFSDS   LSLRT   SDADD   SDDOTA  SDDOTI  SDINI   SDMUL   SDSTO   STRSV
+ 
+LFIHF   ( 12 required routines)
+        CAXPY   CDOTC   CZADD   CZDOTA  CZINI   CZMUL   CZSTO   ICAMAX  L3IHF
+        LFSHF   SDADD   SDMUL
+ 
+LFIQH   ( 14 required routines)
+        CAXPY   CDOTC   CDOTU   CTBSV   CZADD   CZDOTA  CZINI   CZMUL   CZSTO
+        ICAMAX  L3IHF   LFSQH   SDADD   SDMUL
+ 
+LFIQS   (  8 required routines)
+        LFSQS   SDADD   SDDOTA  SDDOTI  SDINI   SDMUL   SDSTO   STBSV
+ 
+LFIRB   (  2 required routines)
+        LFSRB   STBSV
+ 
+LFIRG   (  2 required routines)
+        LFSRG   STRSV
+ 
+LFISF   (  7 required routines)
+        LFSSF   SDADD   SDDOTA  SDDOTI  SDINI   SDMUL   SDSTO
+ 
+LFSCB   (  4 required routines)
+        CAXPY   CDOTC   CDOTU   CTBSV
+ 
+LFSCG   (  4 required routines)
+        CAXPY   CDOTC   CDOTU   CTRSV
+ 
+LFSDH   (  4 required routines)
+        CDOTC   CDOTU   CTRSV   LSLCT
+ 
+LFSDS   (  2 required routines)
+        LSLRT   STRSV
+ 
+LFSHF   (  2 required routines)
+        CAXPY   CDOTC
+ 
+LFSQH   (  4 required routines)
+        CAXPY   CDOTC   CDOTU   CTBSV
+ 
+LFSQS   (  1 required routine)
+        STBSV
+ 
+LFSRB   (  1 required routine)
+        STBSV
+ 
+LFSRG   (  1 required routine)
+        STRSV
+LFSSF
+        ***** No required routines *****
+ 
+LFTCB   (  7 required routines)
+        CAXPY   CCBCB   CGERU   CSCAL   CSWAP   ICAMAX  L2TCB
+ 
+LFTCG   (  6 required routines)
+        CAXPY   CGERU   CSCAL   CSWAP   ICAMAX  L2TCG
+ 
+LFTDH   (  4 required routines)
+        CDOTC   CDOTU   CHFCG   CTRSV
+ 
+LFTDS   (  2 required routines)
+        CSFRG   STRSV
+ 
+LFTHF   (  5 required routines)
+        CAXPY   CHER    CSSCAL  CSWAP   ICAMAX
+ 
+LFTQH   (  4 required routines)
+        CCBCB   CDOTC   CDOTU   CTRSV
+ 
+LFTQS   (  2 required routines)
+        CRBRB   STRSV
+ 
+LFTRB   (  3 required routines)
+        CRBRB   L2TRB   SGER
+ 
+LFTRG   (  3 required routines)
+        CRGRG   L2TRG   SGER
+ 
+LFTSF   (  2 required routines)
+        CSFRG   SSYR
+ 
+LINCG   ( 14 required routines)
+        CAXPY   CDOTC   CDOTU   CGEMV   CGERU   CSCAL   CSSCAL  CSWAP   ICAMAX
+        L2CCG   L2NCG   L2TCG   LINCT   SCASUM
+ 
+LINCT   (  3 required routines)
+        CAXPY   CGERU   CSCAL
+ 
+LINDS   (  8 required routines)
+        CSFRG   L2CDS   L2NDS   LFTDS   LINRT   SGER    SSYR    STRSV
+ 
+LINRG   (  8 required routines)
+        CRGRG   L2CRG   L2NRG   L2TRG   LINRT   NR1RR   SGEMV   SGER
+ 
+LINRT   (  1 required routine)
+        SGER
+ 
+LQERR   (  3 required routines)
+        L2ERR   SGEMV   SGER
+ 
+LQRRR   (  3 required routines)
+        L2RRR   SGEMV   SGER
+LQRSL
+        ***** No required routines *****
+ 
+LSACB   ( 19 required routines)
+        CAXPY   CCBCB   CDOTC   CDOTU   CGERU   CSCAL   CSSCAL  CSWAP   CTBSV
+        CZCDOT  CZUDOT  ICAMAX  L2ACB   L2CCB   L2TCB   LFICB   LFSCB   NR1CB
+        SCASUM
+ 
+LSACG   ( 17 required routines)
+        CAXPY   CDOTC   CDOTU   CGERU   CSCAL   CSSCAL  CSWAP   CTRSV   CZCDOT
+        CZUDOT  ICAMAX  L2ACG   L2CCG   L2TCG   LFICG   LFSCG   SCASUM
+ 
+LSADH   ( 22 required routines)
+        CAXPY   CDOTC   CDOTU   CHFCG   CSSCAL  CTRSV   CZADD   CZDOTA  CZINI
+        CZMUL   CZSTO   ICAMAX  L2ADH   L2CDH   L3IHF   LFIDH   LFSDH   LFTDH
+        LSLCT   SCASUM  SDADD   SDMUL
+ 
+LSADS   ( 14 required routines)
+        CSFRG   L2ADS   L2CDS   LFIDS   LFSDS   LFTDS   LSLRT   SDADD   SDDOTA
+        SDDOTI  SDINI   SDMUL   SDSTO   STRSV
+ 
+LSAHF   ( 20 required routines)
+        CAXPY   CDOTC   CHER    CSSCAL  CSWAP   CZADD   CZDOTA  CZINI   CZMUL
+        CZSTO   ICAMAX  L2AHF   L2CHF   L3IHF   LFIHF   LFSHF   LFTHF   SCASUM
+        SDADD   SDMUL
+ 
+LSAQH   ( 22 required routines)
+        CAXPY   CCBCB   CDOTC   CDOTU   CSSCAL  CTBSV   CTRSV   CZADD   CZDOTA
+        CZINI   CZMUL   CZSTO   ICAMAX  L2AQH   L2CQH   L3IHF   LFIQH   LFSQH
+        LFTQH   SCASUM  SDADD   SDMUL
+ 
+LSAQS   ( 14 required routines)
+        CRBRB   L2AQS   L2CQS   LFIQS   LFSQS   LFTQS   SDADD   SDDOTA  SDDOTI
+        SDINI   SDMUL   SDSTO   STBSV   STRSV
+ 
+LSARB   (  9 required routines)
+        CRBRB   L2ARB   L2CRB   L2TRB   LFIRB   LFSRB   NR1RB   SGER    STBSV
+ 
+LSARG   (  9 required routines)
+        CRGRG   L2ARG   L2CRG   L2TRG   LFIRG   LFSRG   NR1RR   SGER    STRSV
+ 
+LSASF   ( 13 required routines)
+        CSFRG   L2ASF   L2CSF   LFISF   LFSSF   LFTSF   SDADD   SDDOTA  SDDOTI
+        SDINI   SDMUL   SDSTO   SSYR
+ 
+LSBRR   ( 14 required routines)
+        L2BRR   L2RRR   L3BRR   LQRSL   LSLRT   PERMU   SDADD   SDDOTI  SDINI
+        SDMUL   SDSTO   SGEMV   SGER    STRSV
+ 
+LSGRR   (  5 required routines)
+        L2GRR   L3GRR   L3VRR   SGEMV   SGER
+ 
+LSLCB   ( 16 required routines)
+        CAXPY   CCBCB   CDOTC   CDOTU   CGERU   CSCAL   CSSCAL  CSWAP   CTBSV
+        ICAMAX  L2CCB   L2LCB   L2TCB   LFSCB   NR1CB   SCASUM
+ 
+LSLCC   ( 18 required routines)
+        CSWAP   F2TCB   F2TCF   F3TCB   F3TCF   F3TCI   F4TCB   F4TCF   F5TCB
+        F5TCF   F6TCB   F6TCF   F7TCB   F7TCF   F8TCB   F8TCF   FFTCI   L2LCC
+ 
+LSLCG   ( 14 required routines)
+        CAXPY   CDOTC   CDOTU   CGERU   CSCAL   CSSCAL  CSWAP   CTRSV   ICAMAX
+        L2CCG   L2LCG   L2TCG   LFSCG   SCASUM
+ 
+LSLCT   (  3 required routines)
+        CDOTC   CDOTU   CTRSV
+ 
+LSLDH   ( 12 required routines)
+        CAXPY   CDOTC   CDOTU   CHFCG   CSSCAL  CTRSV   L2CDH   L2LDH   LFSDH
+        LFTDH   LSLCT   SCASUM
+ 
+LSLDS   (  7 required routines)
+        CSFRG   L2CDS   L2LDS   LFSDS   LFTDS   LSLRT   STRSV
+ 
+LSLHF   ( 11 required routines)
+        CAXPY   CDOTC   CHER    CSSCAL  CSWAP   ICAMAX  L2CHF   L2LHF   LFSHF
+        LFTHF   SCASUM
+ 
+LSLQH   ( 12 required routines)
+        CAXPY   CCBCB   CDOTC   CDOTU   CSSCAL  CTBSV   CTRSV   L2CQH   L2LQH
+        LFSQH   LFTQH   SCASUM
+ 
+LSLQS   (  7 required routines)
+        CRBRB   L2CQS   L2LQS   LFSQS   LFTQS   STBSV   STRSV
+ 
+LSLRB   (  8 required routines)
+        CRBRB   L2CRB   L2LRB   L2TRB   LFSRB   NR1RB   SGER    STBSV
+ 
+LSLRG   (  8 required routines)
+        CRGRG   L2CRG   L2LRG   L2TRG   LFSRG   NR1RR   SGER    STRSV
+ 
+LSLRT   (  1 required routine)
+        STRSV
+ 
+LSLSF   (  6 required routines)
+        CSFRG   L2CSF   L2LSF   LFSSF   LFTSF   SSYR
+ 
+LSLTC   (  5 required routines)
+        CAXPY   CDOTU   CSWAP   L2LTC   L3LTC
+ 
+LSLTO   (  2 required routines)
+        L2LTO   L3LTO
+ 
+LSQRR   (  6 required routines)
+        L2QRR   L2RRR   LQRSL   PERMU   SGEMV   SGER
+ 
+LSVCR   ( 12 required routines)
+        CAXPY   CDOTC   CDOTU   CGEMV   CGERC   CSCAL   CSROT   CSWAP   L2VCR
+        L3VCR   SCASUM  SCNRM2
+ 
+LSVRR   (  4 required routines)
+        L2VRR   L3VRR   SGEMV   SGER
+ 
+LUPCH   (  1 required routine)
+        CRGRG
+ 
+LUPQR   (  3 required routines)
+        CRGRG   L2PQR   SGEMV
+ 
+MCRCR   (  6 required routines)
+        CAXPY   CDOTC   CDOTU   CGEMV   CSCAL   MUCRV
+ 
+MOLCH   ( 40 required routines)
+        C1SOR   C2DEC   C2INT   CRBRB   CRGRG   CSDER   CSFRG   I10AG   I12AG
+        I3PRK   I5PAG   I7PAG   I8PAG   I9PAG   L2TRB   L2TRG   LFSDS   LFSQS
+        LFSRB   LFSRG   LFTDS   LFTQS   LSLRT   M2LCH   M3LCH   M4LCH   M5LCH
+        M6LCH   M7LCH   M8LCH   P3DER   PPDER   SGBMV   SGEMV   SGER    SSBMV
+        SSYMV   STBSV   STRSV   SVRGP
+ 
+MRRRR   (  2 required routines)
+        MURRV   SGEMV
+ 
+MUCBV   (  4 required routines)
+        CDOTC   CDOTU   CGBMV   CSCAL
+ 
+MUCRV   (  5 required routines)
+        CAXPY   CDOTC   CDOTU   CGEMV   CSCAL
+ 
+MURBV   (  1 required routine)
+        SGBMV
+ 
+MURRV   (  1 required routine)
+        SGEMV
+ 
+MXTXF   (  2 required routines)
+        MURRV   SGEMV
+ 
+MXTYF   (  2 required routines)
+        MURRV   SGEMV
+MXYTF
+        ***** No required routines *****
+ 
+N0ONF   ( 11 required routines)
+        A1OT    CSFRG   N3ONF   N4ONF   N5ONF   N5ONG   N6ONF   N6ONG   N7ONG
+        N8ONG   N9ONG
+ 
+NCONF   ( 11 required routines)
+        A1OT    CSFRG   N2ONF   N3ONF   N4ONF   N5ONF   N5ONG   N6ONG   N7ONG
+        N8ONG   N9ONG
+ 
+NCONG   ( 10 required routines)
+        A1OT    CSFRG   N2ONG   N3ONG   N4ONG   N5ONG   N6ONG   N7ONG   N8ONG
+        N9ONG
+NDAYS
+        ***** No required routines *****
+ 
+NDYIN   (  2 required routines)
+        N3YIN   N4YIN
+ 
+NEQNF   (  8 required routines)
+        N2QNF   N3QNF   N4QNF   N5QNF   N6QNF   N7QNF   N8QNF   N9QNF
+ 
+NEQNJ   (  7 required routines)
+        N2QNJ   N3QNJ   N5QNF   N6QNF   N7QNF   N8QNF   N9QNF
+ 
+NR1CB   (  1 required routine)
+        SCASUM
+NR1RB
+        ***** No required routines *****
+NR1RR
+        ***** No required routines *****
+ 
+NR2RR   (  1 required routine)
+        HYPOT
+NRIRR
+        ***** No required routines *****
+ 
+PCGRC   (  6 required routines)
+        CRBRB   E2ASB   E3ASF   E3CSB   P2GRC   P3GRC
+ 
+PERMA   (  2 required routines)
+        P2RMA   PERMU
+PERMU
+        ***** No required routines *****
+ 
+PLOTP   (  2 required routines)
+        F1T     SSFMT
+ 
+POLRG   (  4 required routines)
+        MRRRR   MURRV   P2LRG   SGEMV
+ 
+PPDER   (  1 required routine)
+        P3DER
+ 
+PPITG   (  1 required routine)
+        P3DER
+ 
+PPVAL   (  2 required routines)
+        P3DER   PPDER
+PRIME
+        ***** No required routines *****
+ 
+QAND    (  1 required routine)
+        Q3ND
+ 
+QCOSB   ( 11 required routines)
+        F3TRB   F3TRI   F4TRB   F5TRB   F6TRB   F7TRB   F8TRB   FFTRI   Q2OSB
+        Q3OSB   QCOSI
+ 
+QCOSF   ( 11 required routines)
+        F3TRF   F3TRI   F4TRF   F5TRF   F6TRF   F7TRF   F8TRF   FFTRI   Q2OSF
+        Q3OSF   QCOSI
+ 
+QCOSI   (  2 required routines)
+        F3TRI   FFTRI
+ 
+QD2DR   (  2 required routines)
+        P3DER   Q3DER
+ 
+QD2VL   (  3 required routines)
+        P3DER   Q3DER   QD2DR
+ 
+QD3DR   (  2 required routines)
+        P3DER   Q3DER
+ 
+QD3VL   (  3 required routines)
+        P3DER   Q3DER   QD3DR
+ 
+QDAG    ( 10 required routines)
+        Q10G    Q2AG    Q3AG    Q4AG    Q4NG    Q5AG    Q6AG    Q7AG    Q8AG
+        Q9AG
+ 
+QDAGI   (  6 required routines)
+        Q10G    Q2AGI   Q3AGI   Q4AGI   Q4AWO   Q4NG
+ 
+QDAGP   (  6 required routines)
+        Q10G    Q2AGP   Q3AGP   Q4AWO   Q4NG    Q9AG
+ 
+QDAGS   (  6 required routines)
+        Q10G    Q2AGS   Q3AGS   Q4AWO   Q4NG    Q9AG
+ 
+QDAWC   (  8 required routines)
+        Q10G    Q2AWC   Q3AWC   Q4AWC   Q4NG    Q5AWC   Q7AWO   Q8AWO
+ 
+QDAWF   ( 12 required routines)
+        Q10G    Q2AWF   Q3AGI   Q3AWF   Q3AWO   Q4AGI   Q4AWO   Q4NG    Q5AWO
+        Q6AWO   Q7AWO   Q8AWO
+ 
+QDAWO   (  9 required routines)
+        Q10G    Q2AWO   Q3AWO   Q4AWO   Q4NG    Q5AWO   Q6AWO   Q7AWO   Q8AWO
+ 
+QDAWS   (  9 required routines)
+        Q10G    Q2AWS   Q3AWS   Q4AWS   Q4NG    Q5AWS   Q6AWS   Q7AWO   Q8AWO
+ 
+QDNG    (  2 required routines)
+        Q3NG    Q4NG
+ 
+QDVAL   (  3 required routines)
+        P3DER   Q3DER   QDDER
+ 
+QPROG   (  2 required routines)
+        A1OT    Q2ROG
+ 
+QSINB   ( 12 required routines)
+        F3TRB   F3TRI   F4TRB   F5TRB   F6TRB   F7TRB   F8TRB   FFTRI   Q2INB
+        Q3OSB   QCOSI   QSINI
+ 
+QSINF   ( 12 required routines)
+        F3TRF   F3TRI   F4TRF   F5TRF   F6TRF   F7TRF   F8TRF   FFTRI   Q2INF
+        Q3OSF   QCOSI   QSINI
+ 
+QSINI   (  3 required routines)
+        F3TRI   FFTRI   QCOSI
+ 
+RATCH   ( 10 required routines)
+        CRGRG   L2CRG   L2LRG   L2TRG   LFSRG   NR1RR   R2TCH   R3TCH   SGER
+        STRSV
+ 
+RCURV   ( 30 required routines)
+        ALBETA  ALNGAM  ALNREL  BETAI   BETDF   C1DIV   C1F     C1T     C1WFR
+        CSEVL   ERFC    FDF     G1AOV   G3AOV   GAMMA   INITS   R2ORP   R2TAP
+        R2URV   R3ORP   R3TAP   R4ORP   R4TAP   R5TAP   R9GAML  R9LGMC  RCOEF
+        SVRGP   TDF     WRAOV
+ 
+RECCF   (  5 required routines)
+        CSEVL   GAMMA   INITS   R9GAML  R9LGMC
+ 
+RECQR   (  1 required routine)
+        R2CQR
+ 
+RLINE   ( 13 required routines)
+        A1OT    C1DIV   C1R     C1TRG   C1WFR   CSFRG   GIRTS   ISNAN   R2IVN
+        R2TDB   R3IVN   SGER    STRSV
+RNGET
+        ***** No required routines *****
+RNOPT
+        ***** No required routines *****
+SCASUM
+        ***** No required routines *****
+SCNRM2
+        ***** No required routines *****
+ 
+SDDOTA  (  3 required routines)
+        SDADD   SDMUL   SDSTO
+ 
+SDDOTI  (  3 required routines)
+        SDINI   SDMUL   SDSTO
+SHOUAP
+        ***** No required routines *****
+SHOUTR
+        ***** No required routines *****
+SPRDCT
+        ***** No required routines *****
+SRCH
+        ***** No required routines *****
+SSUB
+        ***** No required routines *****
+STBMV
+        ***** No required routines *****
+STRMV
+        ***** No required routines *****
+ 
+SURF    ( 12 required routines)
+        L2QRR   L2RRR   LQRSL   PERMU   S2RF    S3RF    S4RF    S5RF    S6RF
+        S7RF    SGEMV   SGER
+SVIBN
+        ***** No required routines *****
+SVIBP
+        ***** No required routines *****
+SVIGN
+        ***** No required routines *****
+SVIGP
+        ***** No required routines *****
+SVRBN
+        ***** No required routines *****
+SVRBP
+        ***** No required routines *****
+SVRGN
+        ***** No required routines *****
+SVRGP
+        ***** No required routines *****
+TDATE
+        ***** No required routines *****
+TRNRR
+        ***** No required routines *****
+ 
+TWODQ   ( 22 required routines)
+        Q4NG    T10DQ   T12DQ   T13DQ   T14DQ   T15DQ   T16DQ   T17DQ   T18DQ
+        T19DQ   T20DQ   T22DQ   T23DQ   T24DQ   T25DQ   T26DQ   T27DQ   T28DQ
+        T29DQ   T2ODQ   T3ODQ   T4ODQ
+ 
+UMCGF   (  2 required routines)
+        CDGRD   U2CGF
+ 
+UMCGG   (  1 required routine)
+        U2CGG
+ 
+UMIAH   ( 15 required routines)
+        CSFRG   U10AH   U11NF   U13NF   U14NF   U18NF   U19NF   U2IAH   U3IAH
+        U4INF   U5INF   U6INF   U7IAH   U8IAH   U9IAH
+ 
+UMIDH   ( 16 required routines)
+        CSFRG   G2HES   U10AH   U11NF   U13NF   U14NF   U18NF   U19NF   U2IDH
+        U3IDH   U4INF   U5INF   U6INF   U7IAH   U8IAH   U9IAH
+ 
+UMINF   ( 17 required routines)
+        CDGRD   FDGRD   U10NF   U11NF   U13NF   U14NF   U15NF   U17NF   U18NF
+        U19NF   U2INF   U3INF   U4INF   U5INF   U6INF   U8INF   U9INF
+ 
+UMING   ( 15 required routines)
+        U10NF   U11NF   U13NF   U14NF   U15NF   U17NG   U18NF   U19NF   U2ING
+        U3ING   U4INF   U5INF   U6INF   U8INF   U9INF
+ 
+UMPOL   (  2 required routines)
+        U2POL   U3POL
+ 
+UNLSF   ( 18 required routines)
+        CSFRG   F2JAC   L2RRR   SGEMV   SGER    U10SF   U11NF   U11SF   U12SF
+        U13SF   U2LSF   U3LSF   U4LSF   U5LSF   U6LSF   U7LSF   U8LSF   U9LSF
+ 
+UNLSJ   ( 17 required routines)
+        CSFRG   L2RRR   SGEMV   SGER    U10SF   U11NF   U11SF   U12SF   U13SF
+        U2LSJ   U3LSJ   U4LSF   U5LSF   U6LSF   U7LSF   U8LSF   U9LSF
+UVMGS
+        ***** No required routines *****
+ 
+UVMID   (  1 required routine)
+        U3MID
+UVMIF
+        ***** No required routines *****
+ 
+VCONC   ( 18 required routines)
+        CSSCAL  F2TCB   F2TCF   F3TCB   F3TCF   F3TCI   F4TCB   F4TCF   F5TCB
+        F5TCF   F6TCB   F6TCF   F7TCB   F7TCF   F8TCB   F8TCF   FFTCI   V2ONC
+ 
+VCONR   ( 17 required routines)
+        F2TCB   F2TCF   F3TCB   F3TCF   F3TCI   F4TCB   F4TCF   F5TCB   F5TCF
+        F6TCB   F6TCF   F7TCB   F7TCF   F8TCB   F8TCF   FFTCI   V2ONR
+ 
+WRCRL   ( 11 required routines)
+        C1FMT   C1TRI   F1TCR   F3TCR   I1CMX   W2CRL   W3CRL   W4CRL   W5CRL
+        W6CRL   W9CRL
+ 
+WRCRN   ( 11 required routines)
+        C1FMT   C1TRI   F1TCR   F3TCR   I1CMX   W2CRL   W3CRL   W4CRL   W5CRL
+        W6CRL   W9CRL
+ 
+WRIRL   (  3 required routines)
+        I1TRI   W3IRL   W9IRL
+ 
+WRIRN   (  4 required routines)
+        I1TRI   W3IRL   W9IRL   WRIRL
+ZADD
+        ***** No required routines *****
+ZANLY
+        ***** No required routines *****
+ZAXPY
+        ***** No required routines *****
+ZBREN
+        ***** No required routines *****
+ZDOTC
+        ***** No required routines *****
+ZDOTU
+        ***** No required routines *****
+ZDROT
+        ***** No required routines *****
+ZDROTM
+        ***** No required routines *****
+ZDSCAL
+        ***** No required routines *****
+ZDVCAL
+        ***** No required routines *****
+ 
+ZHBMV   (  4 required routines)
+        ZAXPY   ZDOTC   ZDOTU   ZSCAL
+ 
+ZPLRC   (  9 required routines)
+        CZINI   CZMUL   CZSTO   SDADD   SDINI   SDMUL   SDSTO   Z3LRC   Z4LRC
+ 
+ZPOCC   ( 19 required routines)
+        CSCAL   CSWAP   CZINI   CZMUL   CZSTO   SDADD   SDINI   SDMUL   SDSTO
+        Z10CC   Z11CC   Z3OCC   Z4LRC   Z4OCC   Z5OCC   Z6OCC   Z7OCC   Z8OCC
+        Z9OCC
+ 
+ZPORC   ( 13 required routines)
+        SDADD   SDINI   SDMUL   SDSTO   Z10RC   Z3LRC   Z3ORC   Z4ORC   Z5ORC
+        Z6ORC   Z7ORC   Z8ORC   Z9ORC
+ZQADD
+        ***** No required routines *****
+ 
+ZQCDOT  (  3 required routines)
+        ZQINI   ZQMUL   ZQSTO
+ 
+ZQDOTA  (  3 required routines)
+        ZQADD   ZQMUL   ZQSTO
+ 
+ZQDOTC  (  3 required routines)
+        ZQINI   ZQMUL   ZQSTO
+ 
+ZQDOTI  (  3 required routines)
+        ZQINI   ZQMUL   ZQSTO
+ 
+ZQDOTU  (  3 required routines)
+        ZQINI   ZQMUL   ZQSTO
+ZQINI
+        ***** No required routines *****
+ZQMUL
+        ***** No required routines *****
+ZQSTO
+        ***** No required routines *****
+ 
+ZQUDOT  (  3 required routines)
+        ZQINI   ZQMUL   ZQSTO
+ZREAL
+        ***** No required routines *****
+ZSCAL
+        ***** No required routines *****
+ZSUB
+        ***** No required routines *****
+ZSWAP
+        ***** No required routines *****
+ 
+ZTBMV   (  3 required routines)
+        ZAXPY   ZDOTC   ZDOTU
+ 
+ZTRMV   (  2 required routines)
+        ZDOTC   ZDOTU
+ZVCAL
+        ***** No required routines *****
+

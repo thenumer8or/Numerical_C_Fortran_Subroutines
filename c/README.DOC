@@ -1,0 +1,133 @@
+               NUMERICAL RECIPES C DISKETTE V1.0
+               --------- ------- - -------- ----
+            The entire contents of this diskette are
+       Copyright (C) 1985, 1987 by Numerical Recipes Software
+               P.O. Box 243, Cambridge, MA  02238
+         Unauthorized reproduction is strictly prohibited.
+
+Please read this document completely before attempting to use the NUMERICAL
+RECIPES C DISKETTE.  Your use of any computer procedures on this diskette
+constitutes acceptance of the terms of the DISCLAIMER OF WARRANTY, which is
+given in full at the end of this document.
+
+WHAT IS THIS DISKETTE?
+
+     This diskette contains machine-readable source code for the C functions
+in the book "Numerical Recipes in C: The Art of Scientific Computing" published
+by Cambridge University Press (1988).  If you do not have the book, this
+diskette will not be very useful to you, since the code on this diskette does
+not include the book's explanations or line-by-line program comments.  Details
+on how to order the book are given at the end of this document.
+
+WHAT PROGRAMS ARE ON THIS DISKETTE?
+
+     All 205 functions listed in "Numerical Recipes: The Art of Scientific
+Computing" are included as C source code on this diskette.  Also on this
+diskette are the following supplementary files:
+
+     -- NRUTIL.C  short utilities for error reporting, and vector
+        and matrix memory allocation.  These are used by other programs
+        on this diskette.
+
+     -- NRUTIL.H  the header declarations file corresponding to NRUTIL.C
+
+     -- COMPLEX.C  utilities for complex arithmetic that are used by a
+        few programs on this diskette.
+
+     -- COMPLEX.H  the header declarations file corresponding to COMPLEX.C
+
+     -- MALLOC.H  a header file that declares malloc() and free(), included
+        for compatibility with some C compilers.  You can probably delete
+        this file, or replace it by one containing only a blank line.
+
+     -- NR.H  a header declarations file for all the Numerical Recipes
+        functions on this diskette.  Three formats are present: traditional,
+        LINT arguments, and ANSI.
+
+     -- README.DOC this file
+
+HOW DO YOU ACCESS THE PROGRAMS?
+
+     This diskette has one "hidden" subdirectory:  The subdirectory \RECIPES
+contains the 205 Numerical Recipes functions, all with names of the format
+*.C. For example, if this diskette is in drive A: and you are in some other
+working directory, you can copy the function BCUCOF to your working directory
+by the command COPY A:\RECIPES\BCUCOF.C <enter> where <enter> denotes the enter
+or return key.  If you want to copy all the Recipe files, e.g. to a hard disk,
+you can do this by the command COPY A:\RECIPES\*.* <enter> This will take some
+time, since the number of files is large.  Also note that some hard disks have
+a minimum file block size as large as 4096 bytes.  Since most of the files are
+much shorter than that, the programs on this diskette may occupy substantially
+more space on a hard disk.  We recommend that you create a backup copy of this
+diskette using the DISKCOPY command, then copy individual programs to your
+working directory only as you need them.
+
+WHAT DO YOU DO IF YOU NEED HELP?
+
+     If you believe that this diskette is defective in manufacture, return it
+to the place of purchase for replacement, or contact Cambridge University Press
+at 32 East 57th Street, New York, NY 10022, USA.
+
+     For technical questions or assistance, write to Numerical Recipes
+Software, P.O. Box 243, Cambridge, MA  02238, USA.  Please note, however, that
+the programs on this diskette are sold "as is" (see DISCLAIMER OF WARRANTY
+below).  The authors of NUMERICAL RECIPES are interested in receiving reports
+of bugs, but they cannot guarantee to correct them on any fixed schedule.  User
+satisfaction is important to authors and publisher, however, so you should not
+hesitate to make your comments or problems known.
+
+HOW TO ORDER ADDITIONAL PRODUCTS:
+
+     The Numerical Recipes series is available in three languages, FORTRAN,
+C, and Pascal, and for a variety of machines, including IBM PC compatibles,
+IBM PS/2 compatibles, Apple Macintosh, DEC VAX/VMS, DEC VAX/ULTRIX, Sun
+Workstation (UNIX), and others.  For each language and machine, the series
+includes the Main Book ("Numerical Recipes: The Art of Scientific Computing"),
+an Example Book, and machine-readable versions of the software.
+
+Some of the above products can be ordered from Cambridge University Press,
+while others must be ordered from Numerical Recipes Software.
+
+Order the following items from Cambridge University Press, 510 North Avenue,
+New Rochelle, New York 10801, Tel. (800) 431-1580 (outside of Canada and New
+York), (914) 235-0300 (in Canada and New York); or contact your local
+bookstore:
+
+     Numerical Recipes (Main Book) FORTRAN/PASCAL edition
+     Numerical Recipes (Main Book) C edition
+     Numerical Recipes Example Book in FORTRAN
+     Numerical Recipes Example Book in Pascal
+     Numerical Recipes Example Book in C
+     IBM PC 5.25" diskette for Main Book (specify FORTRAN, Pascal, or C)
+     IBM PC 5.25" diskette for Example Book (specify FORTRAN, Pascal, or C)
+     Apple Macintosh Disk for Main Book (specify FORTRAN, Pascal, or C)
+     Apple Macintosh Disk for Example Book (specify FORTRAN, Pascal, or C)
+
+Order the following items from Numerical Recipes Software, P.O. Box 243,
+Cambridge, MA  02238:
+
+     PS/2 or laptop 3.5" diskette (one diskette for both Main Book
+          and Example Book  -- specify FORTRAN, Pascal, or C)
+     VAX/VMS Numerical Recipes license and magtape distribution
+          (Main Book and Examples -- specify FORTRAN, Pascal, or C)  
+     UNIX or ULTRIX Numerical Recipes license and magtape distribution
+          (Main Book and Examples -- specify FORTRAN, Pascal, or C)  
+     IBM Mainframe Numerical Recipes license and magtape distribution
+          (Main Book and Examples -- specify FORTRAN, Pascal, or C)  
+
+                       DISCLAIMER OF WARRANTY
+                       ---------- -- --------
+     THE PROGRAMS AND FUNCTIONS ON THIS DISKETTE ARE PROVIDED "AS IS" WITHOUT
+WARRANTY OF ANY KIND.  WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, THAT THE
+PROGRAMS AND FUNCTIONS ARE FREE OF ERROR, OR ARE CONSISTENT WITH ANY PARTICULAR
+STANDARD OF MERCHANTABILITY, OR THAT THEY WILL MEET YOUR REQUIREMENTS FOR ANY
+PARTICULAR APPLICATION.  THEY SHOULD NOT BE RELIED ON FOR SOLVING A PROBLEM
+WHOSE INCORRECT SOLUTION COULD RESULT IN INJURY TO A PERSON OR LOSS OF
+PROPERTY.  IF YOU DO USE THE PROGRAMS OR FUNCTIONS IN SUCH A MANNER, IT IS AT
+YOUR OWN RISK.  THE AUTHORS AND PUBLISHER DISCLAIM ALL LIABILITY FOR DIRECT,
+INCIDENTAL, OR CONSEQUENTIAL DAMAGES RESULTING FROM YOUR USE OF THE PROGRAMS OR
+FUNCTIONS ON THIS DISKETTE.  ANY LIABILITY OF SELLER OR MANUFACTURER WILL BE
+LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT OF DISKETTES WITH MANUFACTURING
+DEFECTS.
+
+

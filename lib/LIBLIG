@@ -1,0 +1,991 @@
+ 
+ 
+ 
+ 
+ 
+ 
+                                                                  Version 1.0
+                                                                April 1, 1987
+                                                          SLIB-LIB-PCDSMS-1.0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                     The IMSL Libraries Installation Guide
+ 
+                                      for
+ 
+                     IBM PC Systems with Microsoft FORTRAN
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                               TABLE OF CONTENTS
+ 
+ 
+                                                                         Page
+Introduction..............................................................1
+ 
+System Requirements.......................................................1
+ 
+IMSL Libraries Distribution Diskettes.....................................2
+  Diskette Characteristics................................................2
+  Description of Libraries Distribution Diskettes.........................3
+    MATH/LIBRARY Object Diskettes.........................................4
+    STAT/LIBRARY Object Diskettes.........................................5
+    SFUN/LIBRARY Object Diskettes.........................................6
+ 
+Library Installation for a Hard-Disk System...............................7
+  Step 1:  Copy the Required Libraries from Diskette to Hard Disk.........7
+  Step 2:  Build the Object Library.......................................7
+ 
+Partial Library Generation................................................9
+ 
+Accessing the Object Library.............................................10
+ 
+Input and Output Control.................................................12
+ 
+IMSL Timing Routines.....................................................12
+ 
+Library Support..........................................................13
+ 
+MATH/LIBRARY Routine List................................................15
+ 
+STAT/LIBRARY Routine List................................................24
+ 
+SFUN/LIBRARY Routine List................................................31
+ 
+ 
+                                    FIGURES
+ 
+ 
+Figure 1:  Sample Compile and Link Session for a Floppy-disk System......11
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                 INTRODUCTION
+ 
+ 
+The IMSL Libraries are sets of computational subprograms written in FORTRAN
+and supported by IMSL.  The IMSL Libraries currently consist of the three
+products:
+ 
+                         MATH/LIBRARY Version 1.0
+                         STAT/LIBRARY Version 1.0
+                         SFUN/LIBRARY Version 2.0
+ 
+The IMSL Libraries are designed to be used independently or together.  This
+document provides information for the installation of one or more of these
+libraries on IBM PC systems.
+ 
+The libraries were compiled and tested by IMSL under the PC-DOS operating
+system (Version 3.1) using the Microsoft  FORTRAN Optimizing Compiler
+(Version 4.0).  All routines were compiled with the -AH (huge memory model)
+and -FPc (floating-point calls to the emulator library) switches.
+ 
+ 
+                             SYSTEM REQUIREMENTS
+ 
+ 
+To install the IMSL Libraries, your computer system must have the following
+components:
+ 
+    - An IBM PC or PC-compatible computer running under DOS Version 2.0 or
+      later.  (DOS Version 3.0 or later for the PC AT.)
+ 
+    - At least two double-sided 5 1/4-inch disk drives.  A hard disk is
+      recommended.
+ 
+    - The Microsoft FORTRAN Optimizing Compiler, Version 4.0 or later.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Copyright    1987 by IMSL, Inc.  All Rights Reserved.  Printed in U.S.A.
+ 
+                                       1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                     IMSL LIBRARIES DISTRIBUTION DISKETTES
+ 
+ 
+The library distribution diskettes were generated under PC-DOS (Version 3.1)
+using the DOS command COPY.
+ 
+Diskette Characteristics
+ 
+The object libraries are on double-sided, double-density diskettes.
+ 
+                Number of Diskettes...... 41 for MATH/LIBRARY
+                                          35 for STAT/LIBRARY
+                                          5 for SFUN/LIBRARY
+                Labeled.................. MATHLIB_1.0 for MATH/LIBRARY
+                                          STATLIB_1.0 for STAT/LIBRARY
+                                          SFUNLIB_2.0 for SFUN/LIBRARY
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Description of Libraries Distribution Diskettes
+ 
+The diskette labeled "Utilities and Source Code" contains the following
+files:
+ 
+      A batch file, MAKLIB.BAT, to build an object library for a single
+      product.
+ 
+      A batch file, BYCHAPTR.BAT, to build an object library for each
+      chapter (MATH/LIBRARY and STAT/LIBRARY only).
+ 
+      A list of required routines, REQ_prod.RTN, where "prod" is the name of
+      the product (MATH, STAT, or SFUN).
+ 
+      IMSL Libraries subprograms CTIME, DTIME, and TDATE (MATH/LIBRARY and
+      STAT/LIBRARY only).
+ 
+The other diskettes in each set contain one or more object libraries that
+follow the naming convention described below.
+ 
+      pPRODnL.LIB
+ 
+      where,  p    = precision (S for single, D for double), MATH/LIBRARY
+                     and STAT/LIBRARY only.
+              PROD = name of the product (MATH, STAT, or SFUN).
+              n    = the chapter/section number.
+              L    = a letter (A, B, or C) for the chapter libraries that are
+                     on more than one diskette.
+ 
+The following libraries do not follow this naming convention:
+ 
+     prodCORE.LIB - the library of core routines that are common to all
+                    libraries of a product, where "prod" is MATH, STAT, or
+                    SFUN.
+ 
+     BLAS.LIB     - the library of Basic Linear Algebra Subprograms in
+                    MATH/LIBRARY and STAT/LIBRARY.
+ 
+Object diskette contents and file sizes (in KBytes) are shown in the tables
+on the following pages.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                         MATH/LIBRARY OBJECT DISKETTES
+ 
+-------------------------------------------------------------------------
+| Diskette |    Library    |  Size  | Diskette |    Library    |  Size  |
+|  Number  |     Name      |(KBytes)|  Number  |     Name      |(KBytes)|
+-------------------------------------------------------------------------
+|          |               |         |         |               |        |
+|      1   |  MATHCORE.LIB |   354   |   21    |  SMATH10.LIB  |   198  |
+|          |               |         |         |               |        |
+|      2   |  BLAS.LIB     |   266   |   22    |  DMATH1A.LIB  |   240  |
+|          |               |         |         |               |        |
+|      3   |  SMATH1A.LIB  |   240   |   23    |  DMATH1B.LIB  |   330  |
+|          |               |         |         |               |        |
+|      4   |  SMATH1B.LIB  |   330   |   24    |  DMATH1C.LIB  |   138  |
+|          |               |         |         |               |        |
+|      5   |  SMATH1C.LIB  |   138   |   25    |  DMATH2A.LIB  |   304  |
+|          |               |         |         |               |        |
+|      6   |  SMATH2A.LIB  |   302   |   26    |  DMATH2B.LIB  |   184  |
+|          |               |         |         |               |        |
+|      7   |  SMATH2B.LIB  |   182   |   27    |  DMATH3A.LIB  |   220  |
+|          |               |         |         |               |        |
+|      8   |  SMATH3A.LIB  |   220   |   28    |  DMATH3B.LIB  |   236  |
+|          |               |         |         |               |        |
+|      9   |  SMATH3B.LIB  |   236   |   29    |  DMATH3C.LIB  |   292  |
+|          |               |         |         |               |        |
+|     10   |  SMATH3C.LIB  |   292   |   30    |  DMATH4A.LIB  |   250  |
+|          |               |         |         |               |        |
+|     11   |  SMATH4A.LIB  |   244   |   31    |  DMATH4B.LIB  |   114  |
+|          |               |         |         |               |        |
+|     12   |  SMATH4B.LIB  |   112   |   32    |  DMATH5A.LIB  |   334  |
+|          |               |         |         |               |        |
+|     13   |  SMATH5A.LIB  |   334   |   33    |  DMATH5B.LIB  |   314  |
+|          |               |         |         |               |        |
+|     14   |  SMATH5B.LIB  |   312   |   34    |  DMATH5C.LIB  |   338  |
+|          |               |         |         |               |        |
+|     15   |  SMATH5C.LIB  |   338   |   35    |  DMATH6.LIB   |   210  |
+|          |               |         |         |               |        |
+|     16   |  SMATH6.LIB   |   210   |   36    |  DMATH7.LIB   |   146  |
+|          |               |         |         |               |        |
+|     17   |  SMATH7.LIB   |   148   |   37    |  DMATH8A.LIB  |   304  |
+|          |               |         |         |               |        |
+|     18   |  SMATH8A.LIB  |   304   |   38    |  DMATH8B.LIB  |   328  |
+|          |               |         |         |               |        |
+|     19   |  SMATH8B.LIB  |   328   |    39   |  DMATH9.LIB   |   318  |
+|          |               |         |         |               |        |
+|     20   |  SMATH9.LIB   |   318   |    40   |  DMATH10.LIB  |   198  |
+|          |               |         |         |               |        |
+-------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       4
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                         STAT/LIBRARY OBJECT DISKETTES
+ 
+-------------------------------------------------------------------------
+| Diskette |    Library    |  Size  | Diskette |    Library    |  Size  |
+|  Number  |     Name      |(KBytes)|  Number  |     Name      |(KBytes)|
+-------------------------------------------------------------------------
+|          |               |        |          |               |        |
+|      1   |  STATCORE.LIB |   354  |    18    |  SSTAT20.LIB  |   338  |
+|          |               |        |          |               |        |
+|      2   |  BLAS.LIB     |   266  |    19    |  DSTAT1.LIB   |   218  |
+|          |               |        |          |               |        |
+|      3   |  SSTAT1.LIB   |   214  |    20    |  DSTAT2A.LIB  |   320  |
+|          |               |        |          |               |        |
+|      4   |  SSTAT2A.LIB  |   318  |    21    |  DSTAT2B.LIB  |   354  |
+|          |               |        |          |               |        |
+|      5   |  SSTAT2B.LIB  |   352  |    22    |  DSTAT3.LIB   |   160  |
+|          |               |        |          |  DSTAT19.LIB  |   162  |
+|      6   |  SSTAT3.LIB   |   160  |          |               |        |
+|          |  SSTAT19.LIB  |   150  |    23    |  DSTAT4A.LIB  |   320  |
+|          |               |        |          |               |        |
+|      7   |  SSTAT4A.LIB  |   318  |    24    |  DSTAT4B.LIB  |    94  |
+|          |               |        |          |  DSTAT5.LIB   |   192  |
+|      8   |  SSTAT4B.LIB  |    92  |          |               |        |
+|          |  SSTAT5.LIB   |   204  |    25    |  DSTAT6.LIB   |   158  |
+|          |               |        |          |  DSTAT7.LIB   |   112  |
+|      9   |  SSTAT6.LIB   |   156  |          |               |        |
+|          |  SSTAT7.LIB   |   110  |    26    |  DSTAT8A.LIB  |   140  |
+|          |               |        |          |               |        |
+|     10   |  SSTAT8A.LIB  |   140  |    27    |  DSTAT8B.LIB  |   328  |
+|          |               |        |          |               |        |
+|     11   |  SSTAT8B.LIB  |   328  |    28    |  DSTAT9.LIB   |   306  |
+|          |               |        |          |               |        |
+|     12   |  SSTAT9.LIB   |   304  |    29    |  DSTAT10.LIB  |   180  |
+|          |               |        |          |  DSTAT11.LIB  |    92  |
+|     13   |  SSTAT10.LIB  |   178  |          |               |        |
+|          |  SSTAT11.LIB  |    94  |    30    |  DSTAT12.LIB  |   156  |
+|          |               |        |          |  DSTAT13.LIB  |    74  |
+|     14   |  SSTAT12.LIB  |   154  |          |               |        |
+|          |  SSTAT13.LIB  |    74  |    31    |  DSTAT14.LIB  |   280  |
+|          |               |        |          |               |        |
+|     15   |  SSTAT14.LIB  |   300  |    32    |  DSTAT15.LIB  |   108  |
+|          |               |        |          |  DSTAT16.LIB  |   164  |
+|     16   |  SSTAT15.LIB  |   108  |          |               |        |
+|          |  SSTAT16.LIB  |   164  |    33    |  DSTAT17.LIB  |   154  |
+|          |               |        |          |  DSTAT18.LIB  |   190  |
+|     17   |  SSTAT17.LIB  |   152  |          |               |        |
+|          |  SSTAT18.LIB  |   174  |    34    |  DSTAT20.LIB  |   342  |
+|          |               |        |          |               |        |
+-------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                         SFUN/LIBRARY OBJECT DISKETTES
+ 
+-------------------------------------------------------------------------
+|  Diskette|   Library     |  Size  | Diskette |    Library    |  Size  |
+|  Number  |     Name      |(KBytes)|  Number  |     Name      |(KBytes)|
+-------------------------------------------------------------------------
+|          |               |         |         |               |        |
+|      1   |  SFUNCORE.LIB |   260   |     3   |  SFUN6.LIB    |   288  |
+|          |               |         |         |  SFUN7.LIB    |    54  |
+|      2   |  SFUN1.LIB    |    10   |         |               |        |
+|          |  SFUN2.LIB    |    52   |     4   |  SFUN9.LIB    |    40  |
+|          |  SFUN3.LIB    |    48   |         |  SFUN10.LIB   |    28  |
+|          |  SFUN4.LIB    |   100   |         |  SFUN11.LIB   |   256  |
+|          |  SFUN5.LIB    |    42   |         |  SFUN12.LIB   |     8  |
+|          |  SFUN8.LIB    |    68   |         |               |        |
+|          |               |         |         |               |        |
+-------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       6
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                  LIBRARY INSTALLATION FOR A HARD-DISK SYSTEM
+ 
+ 
+Before installing a library, verify that enough space is available.  The
+total amount of disk space required for each library part is shown in the
+tables on pages 4-6 of this guide.  Approximately twice this amount is
+required during library generation.
+ 
+The two steps involved in generating an object library are:
+ 
+     1.  Copy the required libraries from diskette to hard disk.
+     2.  Build the object library.
+ 
+Step 1:  Copy the Required Libraries from Diskette to Hard Disk
+ 
+Create a temporary directory and copy the object libraries required for the
+library being built from the distribution diskettes to this directory.
+Note that the core library must also be copied.  For example:
+ 
+     CD \
+     MD IMSL
+     CD IMSL
+     COPY A:*.LIB
+ 
+Repeat the copy command for each diskette required by the library being
+built.
+ 
+Step 2:  Build the Object Library
+ 
+Two batch files are provided on the diskette labeled "Utilities and Source
+Code" to build object libraries.  The batch file MAKLIB.BAT builds an
+object library for a single product, while the batch file BYCHAPTR.BAT
+builds object libraries for each chapter of MATH/LIBRARY and STAT/LIBRARY.
+Note that  BYCHAPTR.BAT is not provided for SFUN/LIBRARY.  Individual
+chapter libraries require less access time during the link step at the
+expense of specifying more libraries on the LINK (or FL) command line.  If
+multiple products are being combined into a single library, an object
+library for  each product must be built first.  Note that the Library
+Manager (Version 3.06) limits the number of symbols in an object library to
+4609.  Therefore, it may not be possible to combine multiple products.  As
+of this writing, it is only possible to build a complete STAT/SFUN library.
+A complete MATH/STAT, MATH/SFUN, or MATH/STAT/SFUN library cannot be built.
+ 
+Single Library Generation
+ 
+Copy the batch file MAKLIB.BAT from the "Utilities and Source Code" diskette
+and execute it.  Enter:
+ 
+     COPY A:MAKLIB.BAT
+     MAKLIB
+ 
+ 
+ 
+ 
+ 
+ 
+                                       7
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The library, IMSLIB.LIB, will be created in the \LIB directory of the current
+drive.  Edit line 3 of MAKLIB.BAT if a different directory is desired.  If
+combining products, build an object library for each product.  In this
+case, the library name must be changed to make each product library name
+unique.  After all single-product libraries are built, issue the following
+command to build the final library:
+ 
+     LIB \LIB\IMSLIB/P:256 +SFUN.LIB+STAT.LIB+MATH.LIB;
+ 
+The LIB command will create the library, IMSLIB.LIB, in the \LIB directory
+of the current drive.  In this example, the single-product libraries exist
+in the current directory and are named SFUN.LIB, STAT.LIB, and MATH.LIB for
+SFUN/LIBRARY, STAT/LIBRARY, and MATH/LIBRARY, respectively.  The order of
+the libraries specified in the LIB command must be as shown.  Include only
+the required single-product libraries in your LIB command.  The module
+redefinition warning messages issued by the Library Manager may be ignored.
+ 
+The temporary directory should now be deleted.  Enter:
+ 
+     CD \
+     DEL IMSL
+     RD IMSL
+ 
+Verify the installation by running the sample job found in the "Accessing
+the Object Library" section of this guide.
+ 
+Chapter Library Generation
+ 
+Copy the batch file BYCHAPTR.BAT from the "Utilities and Source Code"
+diskette and execute it.  Enter:
+ 
+     COPY A:BYCHAPTR.BAT
+     BYCHAPTR
+ 
+The libraries MATHCORE.LIB, BLAS.LIB, MATH1.LIB, MATH2.LIB, ..., MATH10.LIB
+for MATH/LIBRARY and STATCORE.LIB, BLAS.LIB, STAT1.LIB, STAT2.LIB, ...,
+STAT20.LIB for STAT/LIBRARY will be created in the \LIB directory of the
+current drive.  Edit BYCHAPTR.BAT as necessary if a different directory is
+desired.
+ 
+The temporary directory should now be deleted.  Enter:
+ 
+     CD\
+     DEL IMSL
+     RD IMSL
+ 
+Verify the installation by running the sample job found in the "Accessing
+the Object Library" section of this guide.
+ 
+Note that the core library, prodCORE.LIB, must be included in the link step.
+ 
+ 
+ 
+ 
+ 
+ 
+                                       8
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                          PARTIAL LIBRARY GENERATION
+ 
+ 
+You may build a partial library containing only those routines that are
+frequently used on your local system.  Since many user-callable routines
+call other IMSL Libraries routines, be sure to include all needed routines
+in the library being built.  Do this by referring to the list of required
+routines (REQ_prod.RTN, where "prod" is either MATH, STAT, or SFUN) included
+on the diskette labeled "Utilities and Source Code" in the set of distribu-
+tion diskettes.
+ 
+The list of required routines contains the name of each routine in the
+library; you may use it to determine which other routines are needed by any
+given user-callable routine.  Please note that all user-callable routines
+may call certain core routines.  These core routines are contained in the
+library prodCORE.LIB on diskette number 1 in the  set of distribution
+diskettes.  This library must be included in any IMSL library being built.
+ 
+All non-core routines required by a particular user-callable routine exist
+in the library containing the user-callable routine.   The library is
+determined by referring to the library routine lists on pages 15-34 of this
+guide.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       9
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                         ACCESSING THE OBJECT LIBRARY
+ 
+ 
+After a program that calls a library subprogram has been developed, you
+must specify the library to be searched to the linker.  The linker locates
+the appropriate object module in the library and includes it in the load
+module of the calling program.
+ 
+In the example below, the main program MAIN.FOR invokes the IMSL subprogram
+AMACH.  AMACH retrieves real machine constants that define the computer's
+real arithmetic, specifically in this example, an approximate value for
+positive machine infinity.  Additionally, IMSL subprogram UMACH is called
+to retrieve the output unit number.  The source code of MAIN.FOR is as
+follows:
+ 
+            INTEGER NOUT
+            REAL AMACH, RINFP
+            EXTERNAL AMACH, UMACH
+            CALL UMACH (2,NOUT)
+            RINFP = AMACH(7)
+            WRITE (NOUT,*) 'REAL POSITIVE MACHINE INFINITY = ', RINFP
+            STOP
+            END
+ 
+The following commands result in the successful execution of MAIN.FOR:
+ 
+     FL MAIN.FOR -link IMSLIB
+     MAIN
+ 
+Some programs require that the stack size and/or the number of segments be
+increased.  For example, to increase the stack size to 4K and the number of
+segments to 256, issue the following command to generate the executable
+module:
+ 
+     FL MAIN.FOR -F 1000 -link IMSLIB /SE:256
+ 
+The procedure for compiling and linking is slightly different for a floppy-
+disk system.  Because it is not possible to build a combined library on
+diskettes, each library part must be linked in an appropriate manner.  The
+libraries to be searched by the linker are accessed in drive B, although
+the LIB environment variable is set to drive A and the system libraries are
+accessed in drive A.  Follow the sample dialogue in Figure 1 when linking
+with the IMSL libraries.  User input is denoted in bold type.  Compiler and
+linker options are for illustration only and may be different for your
+application.   Refer to Sections 3.3 and 4.6 of the Microsoft FORTRAN
+Optimizing Compiler User's Guide for valid compiler and linker options.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      10
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+__________________________________________________________________________
+ 
+     B>FL -FPc USER.FOR -F 2000 -link SMATH7 SMATH10 MATHCORE /SE:512 /P
+     Microsoft (R) FORTRAN Optimizing Compiler Version 4.00
+     Copyright (c) Microsoft Corp 1987. All rights reserved.
+ 
+     USER.FOR
+     Command line warning D4005 : could not execute 'f2.exe';
+     please insert diskette and press any key
+     Command line warning D4005 : could not execute 'link.exe';
+     please insert diskette and press any key
+ 
+     Microsoft (R) Overlay Linker  Version 3.55
+     Copyright (C) Microsoft Corp 1984, 1985, 1986.  All rights reserved.
+ 
+     Object Modules [.OBJ]: USER.OBJ
+     Run File [USER.EXE]: USER.EXE /STACK:0X2000
+     List File [NUL.MAP]: NUL
+     Libraries [.LIB]: SMATH7 SMATH10 MATHCORE /SE:512 /P ;
+     LINK : warning L4051: SMATH7.LIB : cannot find library
+     enter new file spec:B:
+     LINK : warning L4051: SMATH10.LIB : cannot find library
+     enter new file spec:B:
+     LINK : warning L4051: MATHCORE.LIB : cannot find library
+     enter new file spec:B:
+     LINK : warning L4051: B:SMATH7.LIB : cannot find library
+     enter new file spec:
+     LINK : warning L4051: B:SMATH10.LIB : cannot find library
+     enter new file spec:
+     LINK : warning L4051: B:MATHCORE.LIB : cannot find library
+     enter new file spec:
+     LINK : warning L4054: USER.OBJ : cannot find file
+     change diskette and press <ENTER>
+     LINK : warning L4054: B:SMATH7.LIB : cannot find file
+     change diskette and press <ENTER>
+     LINK : warning L4054: B:SMATH10.LIB : cannot find file
+     change diskette and press <ENTER>
+     LINK : warning L4054: B:MATHCORE.LIB : cannot find file
+     change diskette and press <ENTER>
+     About to generate .EXE file
+     Change diskette in drive B and press <ENTER>
+     Please replace original diskette
+     in drive B: and press <ENTER>
+ 
+     B>
+ 
+ 
+     FIGURE 1:  SAMPLE COMPILE AND LINK SESSION FOR A FLOPPY-DISK SYSTEM
+____________________________________________________________________________
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      11
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                           INPUT AND OUTPUT CONTROL
+ 
+ 
+Routine UMACH sets or retrieves the input or output device unit numbers.
+UMACH is set automatically to use the default FORTRAN unit numbers for
+standard input and output.  These unit numbers can be changed by inserting
+a call  to UMACH at the beginning of the main program that calls IMSL
+MATH/LIBRARY, STAT/LIBRARY, or SFUN/LIBRARY routines.  If the input or
+output numbers are changed from the standard values, you should insert an
+appropriate OPEN statement in the calling program.
+ 
+The calling sequence for UMACH is
+ 
+     CALL UMACH (N, NUNIT),
+ 
+where NUNIT is the input or output unit number that is either retrieved or
+set, depending on which value of N is selected.
+ 
+The arguments are summarized by the following table.
+ 
+                 N |                Effect
+              ------------------------------------------------
+                 1 | Retrieves input unit number in NUNIT.
+                 2 | Retrieves output unit number in NUNIT.
+                -1 | Sets the input unit number to NUNIT.
+                -2 | Sets the output unit number to NUNIT.
+ 
+If the value of N is negative, the input or output unit number is reset to
+NUNIT.  If the value of N is positive, the input or output unit number is
+returned in NUNIT.
+ 
+The input/output unit numbers are set so that, by default, the input unit
+number is 5 and the output unit number is 6.
+ 
+ 
+                             IMSL TIMING ROUTINES
+ 
+ 
+IMSL Libraries function CTIME and subroutines DTIME and TDATE, included in
+MATH/LIBRARY and STAT/LIBRARY, use calls to the FORTRAN run-time library.
+While these routines work correctly under version 4.0 of the Microsoft
+FORTRAN compiler, other versions of the compiler may require modification
+of these routines.  To allow for this possibility, the source code for
+CTIME, DTIME, and TDATE is included on the diskette labeled "Utilities and
+Source Code" in the set of distribution diskettes.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      12
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                LIBRARY SUPPORT
+ 
+ 
+Installers from subscribing organizations  may  contact  the analysts
+responsible for installation support by writing, calling, or telexing IMSL.
+(Telephone and telex charges are at user's expense.)
+ 
+Follow this procedure to obtain telephone consultation on product
+installation:
+ 
+     1.  Call IMSL at (713)782-6060.
+ 
+     2.  Inform the Operator that you need help on the installation of a
+         product.
+ 
+     3.  Be prepared to provide the Operator with the name of the product
+         and the computer system on which it is being installed.
+ 
+     4.  Hold momentarily while the Operator routes your call to the
+         appropriate member of the Software Production Department.
+ 
+Comments and feedback (positive and negative) are also welcomed.  Please
+address them to:
+ 
+                       Manager, Software Production
+                       IMSL, Inc.
+                       2500 ParkWest Tower One
+                       2500 CityWest Boulevard
+                       Houston, Texas  77042-3020
+                       USA
+ 
+or telephone (713)782-6060; telex 791923 IMSL INC HOU.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      13
+ 
+ 
+ 
+

@@ -1,0 +1,595 @@
+ 
+ 
+ 
+ 
+ 
+ 
+                         MATH/LIBRARY ROUTINE LIST
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+ACBCB    SMATH9             20           DBS3DR   DMATH3B            28
+DACBCB   DMATH9             39           BS3IG    SMATH3B             9
+ACHAR    MATHCORE            1           DBS3IG   DMATH3B            28
+IADD     BLAS                2           BS3IN    SMATH3B             9
+SADD     BLAS                2           DBS3IN   DMATH3B            28
+DADD     BLAS                2           BS3VL    SMATH3B             9
+CADD     BLAS                2           DBS3VL   DMATH3B            28
+ZADD     BLAS                2           BSCPP    SMATH3B             9
+AMACH    MATHCORE            1           DBSCPP   DMATH3B            28
+ISAMAX   BLAS                2           BSDER    SMATH3B             9
+IDAMAX   BLAS                2           DBSDER   DMATH3B            28
+ICAMAX   BLAS                2           BSINT    SMATH3B             9
+IZAMAX   BLAS                2           DBSINT   DMATH3B            28
+ISAMIN   BLAS                2           BSITG    SMATH3B             9
+IDAMIN   BLAS                2           DBSITG   DMATH3B            28
+ICAMIN   BLAS                2           BSLS2    SMATH3B             9
+IZAMIN   BLAS                2           DBSLS2   DMATH3B            28
+ARBRB    SMATH9             20           BSLSQ    SMATH3B             9
+DARBRB   DMATH9             39           DBSLSQ   DMATH3B            28
+SAXPY    BLAS                2           BSNAK    SMATH3B             9
+DAXPY    BLAS                2           DBSNAK   DMATH3B            28
+CAXPY    BLAS                2           BSOPK    SMATH3B             9
+ZAXPY    BLAS                2           DBSOPK   DMATH3B            28
+BCLSF    SMATH8A            18           BSVAL    SMATH3B             9
+DBCLSF   DMATH8A            37           DBSVAL   DMATH3B            28
+BCLSJ    SMATH8A            18           BSVLS    SMATH3B             9
+DBCLSJ   DMATH8A            37           DBSVLS   DMATH3B            28
+BCOAH    SMATH8A            18           BVPFD    SMATH5A            13
+DBCOAH   DMATH8A            37           DBVPFD   DMATH5A            32
+BCODH    SMATH8A            18           BVPMS    SMATH5A            13
+DBCODH   DMATH8A            37           DBVPMS   DMATH5A            32
+BCONF    SMATH8A            18           CCBCB    SMATH9             20
+DBCONF   DMATH8A            37           DCCBCB   DMATH9             39
+BCONG    SMATH8A            18           CCBCG    SMATH9             20
+DBCONG   DMATH8A            37           DCCBCG   DMATH9             39
+BCPOL    SMATH8A            18           CCGCB    SMATH9             20
+DBCPOL   DMATH8A            37           DCCGCB   DMATH9             39
+BLINF    SMATH9             20           CCGCG    SMATH9             20
+DBLINF   DMATH9             39           DCCGCG   DMATH9             39
+BS2DR    SMATH3B             9           CDGRD    SMATH8B            19
+DBS2DR   DMATH3B            28           DCDGRD   DMATH8B            38
+BS2IG    SMATH3B             9           CHBCB    SMATH9             20
+DBS2IG   DMATH3B            28           DCHBCB   DMATH9             39
+BS2IN    SMATH3B             9           CHFCG    SMATH9             20
+DBS2IN   DMATH3B            28           DCHFCG   DMATH9             39
+BS2VL    SMATH3B             9           CHGRD    SMATH8B            19
+DBS2VL   DMATH3B            28           DCHGRD   DMATH8B            38
+BS3DR    SMATH3B             9           CHHES    SMATH8B            19
+ 
+ 
+                                      15
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+DCHHES   DMATH8B            38           CSVAL    SMATH3A             8
+CHJAC    SMATH8B            19           DCSVAL   DMATH3A            27
+DCHJAC   DMATH8B            38           CTIME    SMATH10, DMATH10   21, 40
+CONST    MATHCORE            1           CUNIT    SMATH10            21
+DCONST   MATHCORE            1           DCUNIT   DMATH10            40
+ICOPY    BLAS                2           CVTSI    MATHCORE            1
+SCOPY    BLAS                2           DERIV    SMATH4B            12
+DCOPY    BLAS                2           DDERIV   DMATH4B            31
+CCOPY    BLAS                2           DISL1    SMATH9             20
+ZCOPY    BLAS                2           DDISL1   DMATH9             39
+CRBCB    SMATH9             20           DISL2    SMATH9             20
+DCRBCB   DMATH9             39           DDISL2   DMATH9             39
+CRBRB    SMATH9             20           DISLI    SMATH9             20
+DCRBRB   DMATH9             39           DDISLI   DMATH9             39
+CRBRG    SMATH9             20           DLPRS    SMATH8B            19
+DCRBRG   DMATH9             39           DDLPRS   DMATH8B            38
+CRGCG    SMATH9             20           DMACH    MATHCORE            1
+DCRGCG   DMATH9             39           SDOT     BLAS                2
+CRGRB    SMATH9             20           DDOT     BLAS                2
+DCRGRB   DMATH9             39           CDOTU    BLAS                2
+CRGRG    SMATH9             20           CDOTC    BLAS                2
+DCRGRG   DMATH9             39           ZDOTU    BLAS                2
+CRRCR    SMATH9             20           ZDOTC    BLAS                2
+DCRRCR   DMATH9             39           DSDOT    BLAS                2
+CSAKM    SMATH3A             8           CZDOTC   BLAS                2
+DCSAKM   DMATH3A            27           CZDOTU   BLAS                2
+CSBRB    SMATH9             20           ZQDOTC   BLAS                2
+DCSBRB   DMATH9             39           ZQDOTU   BLAS                2
+CSCON    SMATH3A             8           SDSDOT   BLAS                2
+DCSCON   DMATH3A            27           DQDDOT   BLAS                2
+CSDEC    SMATH3A             8           CZCDOT   BLAS                2
+DCSDEC   DMATH3A            27           CZUDOT   BLAS                2
+CSDER    SMATH3A             8           ZQCDOT   BLAS                2
+DCSDER   DMATH3A            27           ZQUDOT   BLAS                2
+CSFRG    SMATH9             20           SDDOTI   BLAS                2
+DCSFRG   DMATH9             39           SDDOTA   BLAS                2
+CSHER    SMATH3A             8           CZDOTI   BLAS                2
+DCSHER   DMATH3A            27           CZDOTA   BLAS                2
+CSINT    SMATH3A             8           DQDOTI   BLAS                2
+DCSINT   DMATH3A            27           DQDOTA   BLAS                2
+CSITG    SMATH3A             8           ZQDOTI   BLAS                2
+DCSITG   DMATH3A            27           ZQDOTA   BLAS                2
+CSPER    SMATH3A             8           DQADD    MATHCORE            1
+DCSPER   DMATH3A            27           DQINI    SMATH9, DMATH9     20, 39
+CSSCV    SMATH3A             8           DQMUL    MATHCORE            1
+DCSSCV   DMATH3A            27           DQSTO    MATHCORE            1
+CSSED    SMATH3A             8           DTIME    SMATH10, DMATH10   21, 40
+DCSSED   DMATH3A            27           EPICG    SMATH2A             6
+CSSMH    SMATH3A             8           DEPICG   DMATH2A            25
+DCSSMH   DMATH3A            27           EPIHF    SMATH2A             6
+ 
+ 
+ 
+                                      16
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+DEPIHF   DMATH2A            25           EVLHF    SMATH2A             6
+EPIRG    SMATH2A             6           DEVLHF   DMATH2A            25
+DEPIRG   DMATH2A            25           EVLRG    SMATH2A             6
+EPISB    SMATH2A             6           DEVLRG   DMATH2A            25
+DEPISB   DMATH2A            25           EVLRH    SMATH2A             6
+EPISF    SMATH2A             6           DEVLRH   DMATH2A            25
+DEPISF   DMATH2A            25           EVLSB    SMATH2A             6
+ERSET    MATHCORE            1           DEVLSB   DMATH2A            25
+EVAHF    SMATH2A             6           EVLSF    SMATH2A             6
+DEVAHF   DMATH2A            25           DEVLSF   DMATH2A            25
+EVASB    SMATH2A             6           FCOSI    SMATH6             16
+DEVASB   DMATH2A            25           DFCOSI   DMATH6             35
+EVASF    SMATH2A             6           FCOST    SMATH6             16
+DEVASF   DMATH2A            25           DFCOST   DMATH6             35
+EVBHF    SMATH2A             6           FDGRD    SMATH8B            19
+DEVBHF   DMATH2A            25           DFDGRD   DMATH8B            38
+EVBSB    SMATH2A             6           FDHES    SMATH8B            19
+DEVBSB   DMATH2A            25           DFDHES   DMATH8B            38
+EVBSF    SMATH2A             6           FDJAC    SMATH8B            19
+DEVBSF   DMATH2A            25           DFDJAC   DMATH8B            38
+EVCCG    SMATH2A             6           FFT2B    SMATH6             16
+DEVCCG   DMATH2A            25           DFFT2B   DMATH6             35
+EVCCH    SMATH2A             6           FFT2D    SMATH6             16
+DEVCCH   DMATH2A            25           DFFT2D   DMATH6             35
+EVCHF    SMATH2A             6           FFTCB    SMATH6             16
+DEVCHF   DMATH2A            25           DFFTCB   DMATH6             35
+EVCRG    SMATH2A             6           FFTCF    SMATH6             16
+DEVCRG   DMATH2A            25           DFFTCF   DMATH6             35
+EVCRH    SMATH2A             6           FFTCI    SMATH6             16
+DEVCRH   DMATH2A            25           DFFTCI   DMATH6             35
+EVCSB    SMATH2A             6           FFTRB    SMATH6             16
+DEVCSB   DMATH2A            25           DFFTRB   DMATH6             35
+EVCSF    SMATH2A             6           FFTRF    SMATH6             16
+DEVCSF   DMATH2A            25           DFFTRF   DMATH6             35
+EVEHF    SMATH2A             6           FFTRI    SMATH6             16
+DEVEHF   DMATH2A            25           DFFTRI   DMATH6             35
+EVESB    SMATH2A             6           FNLSQ    SMATH3C            10
+DEVESB   DMATH2A            25           DFNLSQ   DMATH3C            29
+EVESF    SMATH2A             6           FPS2H    SMATH5B            14
+DEVESF   DMATH2A            25           DFPS2H   DMATH5B            33
+EVFHF    SMATH2A             6           FPS3H    SMATH5C            15
+DEVFHF   DMATH2A            25           DFPS3H   DMATH5C            34
+EVFSB    SMATH2A             6           FQRUL    SMATH4B            12
+DEVFSB   DMATH2A            25           DFQRUL   DMATH4B            31
+EVFSF    SMATH2A             6           FSINI    SMATH6             16
+DEVFSF   DMATH2A            25           DFSINI   DMATH6             35
+EVLCG    SMATH2A             6           FSINT    SMATH6             16
+DEVLCG   DMATH2A            25           DFSINT   DMATH6             35
+EVLCH    SMATH2A             6           GAMMA    SMATH10            21
+DEVLCH   DMATH2A            25           DGAMMA   DMATH10            40
+ 
+ 
+ 
+                                      17
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+GDHES    SMATH8B            19           IVPRK    SMATH5A            13
+DGDHES   DMATH8B            38           DIVPRK   DMATH5A            32
+GGUES    SMATH8B            19           IWKCIN   MATHCORE            1
+DGGUES   DMATH8B            38           IWKIN    MATHCORE            1
+GPICG    SMATH2B             7           JCGRC    SMATH1A             3
+DGPICG   DMATH2B            26           DJCGRC   DMATH1A            22
+GPIRG    SMATH2B             7           LCHRG    SMATH1C             5
+DGPIRG   DMATH2B            26           DLCHRG   DMATH1C            24
+GPISP    SMATH2B             7           LDNCH    SMATH1C             5
+DGPISP   DMATH2B            26           DLDNCH   DMATH1C            24
+GQRCF    SMATH4B            12           LFCCB    SMATH1B             4
+DGQRCF   DMATH4B            31           DLFCCB   DMATH1B            23
+GQRUL    SMATH4B            12           LFCCG    SMATH1B             4
+DGQRUL   DMATH4B            31           DLFCCG   DMATH1B            23
+GVCCG    SMATH2B             7           LFCCT    SMATH1B             4
+DGVCCG   DMATH2B            26           DLFCCT   DMATH1B            23
+GVCRG    SMATH2B             7           LFCDH    SMATH1B             4
+DGVCRG   DMATH2B            26           DLFCDH   DMATH1B            23
+GVCSP    SMATH2B             7           LFCDS    SMATH1A             3
+DGVCSP   DMATH2B            26           DLFCDS   DMATH1A            22
+GVLCG    SMATH2B             7           LFCHF    SMATH1B             4
+DGVLCG   DMATH2B            26           DLFCHF   DMATH1B            23
+GVLRG    SMATH2B             7           LFCQH    SMATH1B             4
+DGVLRG   DMATH2B            26           DLFCQH   DMATH1B            23
+GVLSP    SMATH2B             7           LFCQS    SMATH1A             3
+DGVLSP   DMATH2B            26           DLFCQS   DMATH1A            22
+SHOUAP   BLAS                2           LFCRB    SMATH1A             3
+DHOUAP   BLAS                2           DLFCRB   DMATH1A            22
+SHOUTR   BLAS                2           LFCRG    SMATH1A             3
+DHOUTR   BLAS                2           DLFCRG   DMATH1A            22
+SHPROD   BLAS                2           LFCRT    SMATH1A             3
+DHPROD   BLAS                2           DLFCRT   DMATH1A            22
+HRRRR    SMATH9             20           LFCSF    SMATH1A             3
+DHRRRR   DMATH9             39           DLFCSF   DMATH1A            22
+HYPOT    SMATH10            21           LFDCB    SMATH1B             4
+DHYPOT   DMATH10            40           DLFDCB   DMATH1B            23
+IACHAR   MATHCORE            1           LFDCG    SMATH1B             4
+ICASE    MATHCORE            1           DLFDCG   DMATH1B            23
+IDYWK    SMATH10, DMATH10   21, 40       LFDCT    SMATH1B             4
+IERCD    MATHCORE            1           DLFDCT   DMATH1B            23
+IICSR    MATHCORE            1           LFDDH    SMATH1B             4
+IIDEX    SMATH10, DMATH10   21, 40       DLFDDH   DMATH1B            23
+IMACH    MATHCORE            1           LFDDS    SMATH1A             3
+INLAP    SMATH6             16           DLFDDS   DMATH1A            22
+DINLAP   DMATH6             35           LFDHF    SMATH1B             4
+ISRCH    SMATH10, DMATH10   21, 40       DLFDHF   DMATH1B            23
+IVPAG    SMATH5A            13           LFDQH    SMATH1B             4
+DIVPAG   DMATH5A            32           DLFDQH   DMATH1B            23
+IVPBS    SMATH5A            13           LFDQS    SMATH1A             3
+DIVPBS   DMATH5A            32           DLFDQS   DMATH1A            22
+ 
+ 
+ 
+                                      18
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+LFDRB    SMATH1A             3           LFTCG    SMATH1B             4
+DLFDRB   DMATH1A            22           DLFTCG   DMATH1B            23
+LFDRG    SMATH1A             3           LFTDH    SMATH1B             4
+DLFDRG   DMATH1A            22           DLFTDH   DMATH1B            23
+LFDRT    SMATH1A             3           LFTDS    SMATH1A             3
+DLFDRT   DMATH1A            22           DLFTDS   DMATH1A            22
+LFDSF    SMATH1A             3           LFTHF    SMATH1B             4
+DLFDSF   DMATH1A            22           DLFTHF   DMATH1B            23
+LFICB    SMATH1B             4           LFTQH    SMATH1B             4
+DLFICB   DMATH1B            23           DLFTQH   DMATH1B            23
+LFICG    SMATH1B             4           LFTQS    SMATH1A             3
+DLFICG   DMATH1B            23           DLFTQS   DMATH1A            22
+LFIDH    SMATH1B             4           LFTRB    SMATH1A             3
+DLFIDH   DMATH1B            23           DLFTRB   DMATH1A            22
+LFIDS    SMATH1A             3           LFTRG    SMATH1A             3
+DLFIDS   DMATH1A            22           DLFTRG   DMATH1A            22
+LFIHF    SMATH1B             4           LFTSF    SMATH1A             3
+DLFIHF   DMATH1B            23           DLFTSF   DMATH1A            22
+LFIQH    SMATH1B             4           LINCG    SMATH1B             4
+DLFIQH   DMATH1B            23           DLINCG   DMATH1B            23
+LFIQS    SMATH1A             3           LINCT    SMATH1B             4
+DLFIQS   DMATH1A            22           DLINCT   DMATH1B            23
+LFIRB    SMATH1A             3           LINDS    SMATH1A             3
+DLFIRB   DMATH1A            22           DLINDS   DMATH1A            22
+LFIRG    SMATH1A             3           LINRG    SMATH1A             3
+DLFIRG   DMATH1A            22           DLINRG   DMATH1A            22
+LFISF    SMATH1A             3           LINRT    SMATH1A             3
+DLFISF   DMATH1A            22           DLINRT   DMATH1A            22
+LFSCB    SMATH1B             4           LQERR    SMATH1C             5
+DLFSCB   DMATH1B            23           DLQERR   DMATH1C            24
+LFSCG    SMATH1B             4           LQRRR    SMATH1C             5
+DLFSCG   DMATH1B            23           DLQRRR   DMATH1C            24
+LFSDH    SMATH1B             4           LQRSL    SMATH1C             5
+DLFSDH   DMATH1B            23           DLQRSL   DMATH1C            24
+LFSDS    SMATH1A             3           LSACB    SMATH1B             4
+DLFSDS   DMATH1A            22           DLSACB   DMATH1B            23
+LFSHF    SMATH1B             4           LSACG    SMATH1B             4
+DLFSHF   DMATH1B            23           DLSACG   DMATH1B            23
+LFSQH    SMATH1B             4           LSADH    SMATH1B             4
+DLFSQH   DMATH1B            23           DLSADH   DMATH1B            23
+LFSQS    SMATH1A             3           LSADS    SMATH1A             3
+DLFSQS   DMATH1A            22           DLSADS   DMATH1A            22
+LFSRB    SMATH1A             3           LSAHF    SMATH1B             4
+DLFSRB   DMATH1A            22           DLSAHF   DMATH1B            23
+LFSRG    SMATH1A             3           LSAQH    SMATH1B             4
+DLFSRG   DMATH1A            22           DLSAQH   DMATH1B            23
+LFSSF    SMATH1A             3           LSAQS    SMATH1A             3
+DLFSSF   DMATH1A            22           DLSAQS   DMATH1A            22
+LFTCB    SMATH1B             4           LSARB    SMATH1A             3
+DLFTCB   DMATH1B            23           DLSARB   DMATH1A            22
+ 
+ 
+ 
+                                      19
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+LSARG    SMATH1A             3           IDMAX    BLAS                2
+DLSARG   DMATH1A            22           MCRCR    SMATH9             20
+LSASF    SMATH1A             3           DMCRCR   DMATH9             39
+DLSASF   DMATH1A            22           IIMIN    BLAS                2
+LSBRR    SMATH1C             5           ISMIN    BLAS                2
+DLSBRR   DMATH1C            24           IDMIN    BLAS                2
+LSGRR    SMATH1C             5           MOLCH    SMATH5B            14
+DLSGRR   DMATH1C            24           DMOLCH   DMATH5B            33
+LSLCB    SMATH1B             4           MRRRR    SMATH9             20
+DLSLCB   DMATH1B            23           DMRRRR   DMATH9             39
+LSLCC    SMATH1B             4           MUCBV    SMATH9             20
+DLSLCC   DMATH1B            23           DMUCBV   DMATH9             39
+LSLCG    SMATH1B             4           MUCRV    SMATH9             20
+DLSLCG   DMATH1B            23           DMUCRV   DMATH9             39
+LSLCT    SMATH1B             4           MURBV    SMATH9             20
+DLSLCT   DMATH1B            23           DMURBV   DMATH9             39
+LSLDH    SMATH1B             4           MURRV    SMATH9             20
+DLSLDH   DMATH1B            23           DMURRV   DMATH9             39
+LSLDS    SMATH1A             3           MXTXF    SMATH9             20
+DLSLDS   DMATH1A            22           DMXTXF   DMATH9             39
+LSLHF    SMATH1B             4           MXTYF    SMATH9             20
+DLSLHF   DMATH1B            23           DMXTYF   DMATH9             39
+LSLQH    SMATH1B             4           MXYTF    SMATH9             20
+DLSLQH   DMATH1B            23           DMXYTF   DMATH9             39
+LSLQS    SMATH1A             3           NCONF    SMATH8B            19
+DLSLQS   DMATH1A            22           DNCONF   DMATH8B            38
+LSLRB    SMATH1A             3           NCONG    SMATH8B            19
+DLSLRB   DMATH1A            22           DNCONG   DMATH8B            38
+LSLRG    SMATH1A             3           NDAYS    SMATH10, DMATH10   21, 40
+DLSLRG   DMATH1A            22           NDYIN    SMATH10, DMATH10   21, 40
+LSLRT    SMATH1A             3           NEQNF    SMATH7             17
+DLSLRT   DMATH1A            22           DNEQNF   DMATH7             36
+LSLSF    SMATH1A             3           NEQNJ    SMATH7             17
+DLSLSF   DMATH1A            22           DNEQNJ   DMATH7             36
+LSLTC    SMATH1B             4           NR1CB    SMATH9             20
+DLSLTC   DMATH1B            23           DNR1CB   DMATH9             39
+LSLTO    SMATH1A             3           NR1RB    SMATH9             20
+DLSLTO   DMATH1A            22           DNR1RB   DMATH9             39
+LSQRR    SMATH1C             5           NR1RR    SMATH9             20
+DLSQRR   DMATH1C            24           DNR1RR   DMATH9             39
+LSVCR    SMATH1C             5           NR2RR    SMATH9             20
+DLSVCR   DMATH1C            24           DNR2RR   DMATH9             39
+LSVRR    SMATH1C             5           NRIRR    SMATH9             20
+DLSVRR   DMATH1C            24           DNRIRR   DMATH9             39
+LUPCH    SMATH1C             5           SNRM2    BLAS                2
+DLUPCH   DMATH1C            24           DNRM2    BLAS                2
+LUPQR    SMATH1C             5           SCNRM2   BLAS                2
+DLUPQR   DMATH1C            24           DZNRM2   BLAS                2
+IIMAX    BLAS                2           PAGE     MATHCORE            1
+ISMAX    BLAS                2           PCGRC    SMATH1A             3
+ 
+ 
+ 
+                                      20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+DPCGRC   DMATH1A            22           QDDER    SMATH3C            10
+PERMA    SMATH10            21           DQDDER   DMATH3C            29
+DPERMA   DMATH10            40           QDNG     SMATH4A            11
+PERMU    SMATH10            21           DQDNG    DMATH4A            30
+DPERMU   DMATH10            40           QDVAL    SMATH3C            10
+PLOTP    SMATH10            21           DQDVAL   DMATH3C            29
+DPLOTP   DMATH10            40           QPROG    SMATH8B            19
+POLRG    SMATH9             20           DQPROG   DMATH8B            38
+DPOLRG   DMATH9             39           QSINB    SMATH6             16
+PPDER    SMATH3C            10           DQSINB   DMATH6             35
+DPPDER   DMATH3C            29           QSINF    SMATH6             16
+PPITG    SMATH3C            10           DQSINF   DMATH6             35
+DPPITG   DMATH3C            29           QSINI    SMATH6             16
+PPVAL    SMATH3C            10           DQSINI   DMATH6             35
+DPPVAL   DMATH3C            29           RATCH    SMATH3C            10
+SPRDCT   BLAS                2           DRATCH   DMATH3C            29
+DPRDCT   BLAS                2           RCURV    SMATH3C            10
+PRIME    SMATH10, DMATH10   21, 40       DRCURV   DMATH3C            29
+QAND     SMATH4A            11           RECCF    SMATH4B            12
+DQAND    DMATH4A            30           DRECCF   DMATH4B            31
+QCOSB    SMATH6             16           RECQR    SMATH4B            12
+DQCOSB   DMATH6             35           DRECQR   DMATH4B            31
+QCOSF    SMATH6             16           RLINE    SMATH3C            10
+DQCOSF   DMATH6             35           DRLINE   DMATH3C            29
+QCOSI    SMATH6             16           RNGET    SMATH10, DMATH10   21, 40
+DQCOSI   DMATH6             35           RNOPT    SMATH10, DMATH10   21, 40
+QD2DR    SMATH3C            10           RNSET    MATHCORE            1
+DQD2DR   DMATH3C            29           RNUN     SMATH10            21
+QD2VL    SMATH3C            10           DRNUN    DMATH10            40
+DQD2VL   DMATH3C            29           RNUNF    MATHCORE            1
+QD3DR    SMATH3C            10           DRNUNF   MATHCORE            1
+DQD3DR   DMATH3C            29           SROT     BLAS                2
+QD3VL    SMATH3C            10           DROT     BLAS                2
+DQD3VL   DMATH3C            29           CSROT    BLAS                2
+QDAG     SMATH4A            11           ZDROT    BLAS                2
+DQDAG    DMATH4A            30           SROTG    BLAS                2
+QDAGI    SMATH4A            11           DROTG    BLAS                2
+DQDAGI   DMATH4A            30           SROTM    BLAS                2
+QDAGP    SMATH4A            11           DROTM    BLAS                2
+DQDAGP   DMATH4A            30           CSROTM   BLAS                2
+QDAGS    SMATH4A            11           ZDROTM   BLAS                2
+DQDAGS   DMATH4A            30           SROTMG   BLAS                2
+QDAWC    SMATH4A            11           DROTMG   BLAS                2
+DQDAWC   DMATH4A            30           SSCAL    BLAS                2
+QDAWF    SMATH4A            11           DSCAL    BLAS                2
+DQDAWF   DMATH4A            30           CSCAL    BLAS                2
+QDAWO    SMATH4A            11           ZSCAL    BLAS                2
+DQDAWO   DMATH4A            30           CSSCAL   BLAS                2
+QDAWS    SMATH4A            11           ZDSCAL   BLAS                2
+DQDAWS   DMATH4A            30           ISET     BLAS                2
+ 
+ 
+ 
+                                      21
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette       Routine      Library      Diskette
+-------      -------      --------       -------      -------      --------
+ 
+SSET     BLAS                2           UMIDH    SMATH8A            18
+DSET     BLAS                2           DUMIDH   DMATH8A            37
+CSET     BLAS                2           UMINF    SMATH8A            18
+ZSET     BLAS                2           DUMINF   DMATH8A            37
+SRCH     SMATH10            21           UMING    SMATH8A            18
+DSRCH    DMATH10            40           DUMING   DMATH8A            37
+SSRCH    MATHCORE            1           UMPOL    SMATH8A            18
+ISUM     BLAS                2           DUMPOL   DMATH8A            37
+SSUM     BLAS                2           UNLSF    SMATH8A            18
+DSUM     BLAS                2           DUNLSF   DMATH8A            37
+SASUM    BLAS                2           UNLSJ    SMATH8A            18
+DASUM    BLAS                2           DUNLSJ   DMATH8A            37
+SCASUM   BLAS                2           UVMGS    SMATH8A            18
+DZASUM   BLAS                2           DUVMGS   DMATH8A            37
+ISUB     BLAS                2           UVMID    SMATH8A            18
+SSUB     BLAS                2           DUVMID   DMATH8A            37
+DSUB     BLAS                2           UVMIF    SMATH8A            18
+CSUB     BLAS                2           DUVMIF   DMATH8A            37
+ZSUB     BLAS                2           SVCAL    BLAS                2
+SURF     SMATH3C            10           DVCAL    BLAS                2
+DSURF    DMATH3C            29           CVCAL    BLAS                2
+SVIBN    SMATH10, DMATH10   21, 40       ZVCAL    BLAS                2
+SVIBP    SMATH10, DMATH10   21, 40       CSVCAL   BLAS                2
+SVIGN    SMATH10, DMATH10   21, 40       ZDVCAL   BLAS                2
+SVIGP    SMATH10, DMATH10   21, 40       VCONC    SMATH9             20
+SVRBN    SMATH10            21           DVCONC   DMATH9             39
+DSVRBN   DMATH10            40           VCONR    SMATH9             20
+SVRBP    SMATH10            21           DVCONR   DMATH9             39
+DSVRBP   DMATH10            40           WRCRL    SMATH10            21
+SVRGN    SMATH10            21           DWRCRL   DMATH10            40
+DSVRGN   DMATH10            40           WRCRN    SMATH10            21
+SVRGP    SMATH10            21           DWRCRN   DMATH10            40
+DSVRGP   DMATH10            40           WRIRL    SMATH10, DMATH10   21, 40
+ISWAP    BLAS                2           WRIRN    SMATH10, DMATH10   21, 40
+SSWAP    BLAS                2           WROPT    MATHCORE            1
+DSWAP    BLAS                2           WRRRL    SMATH10            21
+CSWAP    BLAS                2           DWRRRL   DMATH10            40
+ZSWAP    BLAS                2           WRRRN    SMATH10            21
+TDATE    SMATH10, DMATH10   21, 40       DWRRRN   DMATH10            40
+TRNRR    SMATH9             20           SXYZ     BLAS                2
+DTRNRR   DMATH9             39           DXYZ     BLAS                2
+TWODQ    SMATH4A            11           ZANLY    SMATH7             17
+DTWODQ   DMATH4A            30           DZANLY   DMATH7             36
+UMACH    MATHCORE            1           ZBREN    SMATH7             17
+UMCGF    SMATH8A            18           DZBREN   DMATH7             36
+DUMCGF   DMATH8A            37           ZPLRC    SMATH7             17
+UMCGG    SMATH8A            18           DZPLRC   DMATH7             36
+DUMCGG   DMATH8A            37           ZPOCC    SMATH7             17
+UMIAH    SMATH8A            18           DZPOCC   DMATH7             36
+DUMIAH   DMATH8A            37           ZPORC    SMATH7             17
+ 
+ 
+ 
+                                      22
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Routine      Library      Diskette
+-------      -------      --------
+ 
+DZPORC   DMATH7             36
+ZQADD    SMATH9, DMATH9     20, 39
+ZQINI    SMATH9, DMATH9     20, 39
+ZQMUL    SMATH9, DMATH9     20, 39
+ZQSTO    SMATH9, DMATH9     20, 39
+ZREAL    SMATH7             17
+DZREAL   DMATH7             36
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                      23
+ 
+ 
+ 
+
